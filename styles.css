@@ -3,11 +3,11 @@ font-family: Arial, Helvetica, sans-serif;
 font-weight: 400;
 }
 
-.journey,.experience {
+.journey,.experience,.logs {
     text-align: center;
 }
 
-.aboutMe{
+.aboutMe,.learning{
     padding: 1em;
     margin: 1.25em;
 }
