@@ -11,3 +11,17 @@ font-weight: 400;
     padding: 1em;
     margin: 1.25em;
 }
+
+.version{
+    padding-top: 1em;
+    font-size: 14px;
+}
+
+.manny{
+    font-size: 14px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
