@@ -25,3 +25,7 @@ font-weight: 400;
     display: flex;
     justify-content: space-around;
 }
+
+.progress{
+    text-align: center;
+}
