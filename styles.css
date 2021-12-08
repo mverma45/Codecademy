@@ -7,9 +7,10 @@ font-weight: 400;
     text-align: center;
 }
 
-.aboutMe,.learning{
+.learning{
     padding: 1em;
     margin: 1.25em;
+    text-align: center;
 }
 
 .version{
@@ -23,9 +24,13 @@ font-weight: 400;
 
 .footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .progress{
     text-align: center;
+}
+
+hr{
+    margin-top: 20em;
 }
