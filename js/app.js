@@ -57,3 +57,6 @@ function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
           }
         };
         
+        //same code as above but it's a implicit return line only has one parameter and it's turned into a teranary operator.
+        
+        const plantNeedsWater = day => day === 'Wednesday' ? true : false;
