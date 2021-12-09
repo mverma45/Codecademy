@@ -47,3 +47,13 @@ function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
         }
         console.log(plantNeedsWater('Tuesday'))
         }
+
+        //same code as above but just an arrow function.
+        const plantNeedsWater = (day) => {
+          if (day === 'Wednesday') {
+            return true;
+          } else {
+            return false;
+          }
+        };
+        
