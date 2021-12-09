@@ -37,4 +37,13 @@ function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
       }
       const totalCost = costOfMonitors(5, 4)
       
+      //Plants need water
       console.log(totalCost);
+      const plantNeedsWater = function (day, plantNeedsWater){
+        if (day === 'Wednesday'){
+          return true;
+        } else {
+          return false;
+        }
+        console.log(plantNeedsWater('Tuesday'))
+        }
