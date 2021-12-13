@@ -63,18 +63,17 @@ function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
 
         // Rock, Paper, Scissors Auto win with Bomb
 
-        const getUserChoice = (userInput) => {
+        const getUserChoice = userInput => {
           userInput = userInput.toLowerCase();
           
           if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb'){
             return userInput;
           } else {
             console.log('Error!');
-        }
-      }
-          
+        } 
+      };
           const getComputerChoice = () => {
-          const randomNumber = (Math.floor(Math.random() * 3));
+          const randomNumber = Math.floor(Math.random() * 3);
           switch (randomNumber){
             case 0:
               return 'rock';
@@ -82,42 +81,45 @@ function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
               return 'paper';
             case 2:
               return 'scissors';
-            case 3:
-              return 'bomb';
+            }
           }
-          };
           const determineWinner = (userChoice, computerChoice) => {
           if (userChoice === computerChoice) {
             return 'the game was a tie';
           }
-          
+        
           if (userChoice === 'rock') {
             if (computerChoice === 'paper') {
-              return 'You lost, the computer beat you'
+           return 'You lost, the computer beat you'
             } else 
              return 'Congratulations, you won'
-          }
+            }
+            
           if (userChoice === 'paper'){
             if (computerChoice === 'scissors') {
            return 'You lost, the computer beat you'
             } else 
              return 'Congratulations, you won'
           }
+         
           if (userChoice === 'scissors') {
             if (computerChoice === 'rock') {
               return 'You lost, the computer beat you'
             } else 
             return 'Congratulations, you won'
-          } else
-            return 'You won'
-          }
-          
+          }      
+      
+      
+        if (userChoice === 'bomb'){
+          return 'Congratulations, you won'
+        }
+      };
           const playGame = () => {
-            const userChoice = getUserChoice('scissors');
+            const userChoice = getUserChoice('bomb');
             const computerChoice = getComputerChoice();
             console.log ('You threw: ' + userChoice);
             console.log ('The Computer threw: ' + computerChoice);
             console.log(determineWinner(userChoice, computerChoice));
           };
-          
+
           playGame();
