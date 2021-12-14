@@ -187,3 +187,88 @@ function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
           }
         }
           calculateSleepDebt()
+
+
+          const city = 'New York City';
+          function logCitySkyline() {
+          let skyscraper = 'Empire State Building'
+          return 'The stars over the ' + skyscraper + ' in ' + city;
+          
+          }
+          console.log(logCitySkyline())
+
+          const satellite = 'The Moon';
+          const galaxy = 'The Milky Way';
+          const stars = 'North Star';
+          
+          const callMyNightSky = () => {
+            return `Night Sky: ${satellite}, ${stars}, and ${galaxy}`;
+          }
+            console.log(callMyNightSky());
+
+            
+            
+            const logVisibleLightWaves = () => {
+              const lightWaves = 'Moonlight';
+              console.log(lightWaves);
+            };
+            logVisibleLightWaves();
+            // //this going to give an error since lightWaves is out of scope.
+            // console.log(lightWaves)
+
+
+
+            const players = () => {
+              const player1 = 'LeBron James';
+              const player2 = 'Michael Jordan';
+              console.log(player1);
+              console.log(player2);
+            };
+            players();
+
+
+            // The scope of `random` is too loose 
+const random = Math.floor(Math.random() * 3);
+
+const getRandEvent = () => {
+  if (random === 0) {
+    return 'Marathon';
+  } else if (random === 1) {
+    return 'Triathlon';
+  } else if (random === 2) {
+    return 'Pentathlon';
+  }
+};
+
+// The scope of `days` is too tight 
+const getTrainingDays = event => {
+
+  if (event === 'Marathon') {
+    let days = 50;
+  } else if (event === 'Triathlon') {
+    let days = 100;
+  } else if (event === 'Pentathlon') {
+    let days = 200;
+  }
+
+  return days;
+};
+
+// The scope of `name` is too tight 
+const logEvent = event => {
+  const name = 'Nala';
+  console.log(`${name}'s event is: ${event}`);
+};
+
+const logTime = days => {
+  const name = 'Nala';
+  console.log(`${name}'s time to train is: ${days} days`);
+};
+
+const event = getRandEvent();
+const days = getTrainingDays(event);
+// Define a `name` variable. Use it as an argument after updating logEvent and logTime 
+
+
+logEvent(event);
+logTime(days);
