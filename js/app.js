@@ -278,3 +278,25 @@ function lifePhase(age) {
   console.log(lifePhase(100))
   console.log(lifePhase(-8))
 
+  //Grades
+const finalGrade = (g1, g2, g3) => {
+
+  if ((g1 < 0 || g1 > 100) || (g2 < 0 || g2 > 100) || (g3 < 0 || g3 > 100)){
+    return 'You have entered an invalid grade.'
+  }
+  let avg = (g1 + g2 + g3 ) / 3;
+  if(avg >= 0 && avg <= 59) {
+      return 'F'
+} else if(avg >= 60 && avg <=69){
+    return 'D'
+} else if(avg >=70 && avg <=79){
+    return 'C'
+} else if(avg >=80 && avg <=89){
+    return 'B'
+} else if (avg >=90 && avg <=100){
+    return 'A'
+ } 
+}
+
+console.log(finalGrade(99, 92, 95))
+console.log(finalGrade(65, 79, 89))
