@@ -300,3 +300,16 @@ const finalGrade = (g1, g2, g3) => {
 
 console.log(finalGrade(99, 92, 95))
 console.log(finalGrade(65, 79, 89))
+
+//reporting for duty.
+
+const reportingForDuty = (rank, lastName) => {
+
+  return (`${rank} ${lastName} reporting for duty!`)
+  } 
+  
+  
+  // Uncomment the line below when you're ready to try out your function
+  console.log(reportingForDuty('Private', 'Fido'))
+  console.log(reportingForDuty('Gen', 'Verma'))
+  console.log(reportingForDuty('Col', 'Sanders love me some chicken'))
