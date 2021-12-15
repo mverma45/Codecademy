@@ -49,17 +49,18 @@ function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
         }
 
         //same code as above but just an arrow function.
-        const plantNeedsWater = (day) => {
+        const plantNeedsWater2 = (day) => {
           if (day === 'Wednesday') {
             return true;
           } else {
             return false;
           }
+        console.log(plantNeedsWater2('Wednesday'))
         };
         
         //same code as above but it's a implicit return line only has one parameter and it's turned into a teranary operator.
         
-        const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+        const plantNeedsWater3 = day => day === 'Wednesday' ? true : false;
 
         // Rock, Paper, Scissors Auto win with Bomb
 
@@ -142,13 +143,13 @@ function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
             } else (day == 'Sunday') 
             return 11;
           };
-            // console.log(getSleepHours('Monday'));
-            // console.log(getSleepHours('Tuesday'));
-            // console.log(getSleepHours('Wedneday'));
-            // console.log(getSleepHours('Thursday'));
-            // console.log(getSleepHours('Friday'));
-            // console.log(getSleepHours('Saturday'));
-            // console.log(getSleepHours('Sunday'));
+            console.log(getSleepHours('Monday'));
+            console.log(getSleepHours('Tuesday'));
+            console.log(getSleepHours('Wedneday'));
+            console.log(getSleepHours('Thursday'));
+            console.log(getSleepHours('Friday'));
+            console.log(getSleepHours('Saturday'));
+            console.log(getSleepHours('Sunday'));
           
           const getActualSleepHours = () => {
            return getSleepHours('Monday')
@@ -188,49 +189,13 @@ function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
         }
           calculateSleepDebt()
 
+//Scope 
 
-          const city = 'New York City';
-          function logCitySkyline() {
-          let skyscraper = 'Empire State Building'
-          return 'The stars over the ' + skyscraper + ' in ' + city;
-          
-          }
-          console.log(logCitySkyline())
+          // The scope of `random` is too loose 
 
-          const satellite = 'The Moon';
-          const galaxy = 'The Milky Way';
-          const stars = 'North Star';
-          
-          const callMyNightSky = () => {
-            return `Night Sky: ${satellite}, ${stars}, and ${galaxy}`;
-          }
-            console.log(callMyNightSky());
-
-            
-            
-            const logVisibleLightWaves = () => {
-              const lightWaves = 'Moonlight';
-              console.log(lightWaves);
-            };
-            logVisibleLightWaves();
-            // //this going to give an error since lightWaves is out of scope.
-            // console.log(lightWaves)
-
-
-
-            const players = () => {
-              const player1 = 'LeBron James';
-              const player2 = 'Michael Jordan';
-              console.log(player1);
-              console.log(player2);
-            };
-            players();
-
-
-            // The scope of `random` is too loose 
-const random = Math.floor(Math.random() * 3);
-
+const name = 'Nala';
 const getRandEvent = () => {
+const random = Math.floor(Math.random() * 3);
   if (random === 0) {
     return 'Marathon';
   } else if (random === 1) {
@@ -242,26 +207,25 @@ const getRandEvent = () => {
 
 // The scope of `days` is too tight 
 const getTrainingDays = event => {
-
+let days;
   if (event === 'Marathon') {
-    let days = 50;
+  days = 50;
   } else if (event === 'Triathlon') {
-    let days = 100;
+  days = 100;
   } else if (event === 'Pentathlon') {
-    let days = 200;
+    days = 200;
   }
-
   return days;
 };
 
 // The scope of `name` is too tight 
-const logEvent = event => {
-  const name = 'Nala';
+const logEvent = (name, event) => {
+  // const name = 'Nala';
   console.log(`${name}'s event is: ${event}`);
 };
 
-const logTime = days => {
-  const name = 'Nala';
+const logTime = (name, days) => {
+  
   console.log(`${name}'s time to train is: ${days} days`);
 };
 
@@ -269,6 +233,48 @@ const event = getRandEvent();
 const days = getTrainingDays(event);
 // Define a `name` variable. Use it as an argument after updating logEvent and logTime 
 
+const event2 = getRandEvent();
+const days2 = getTrainingDays(event2);
+const name2 = 'Warren';
+ 
+logEvent(name2, event2);
+logTime(name2, days2);
+logEvent(name, event);
+logTime(name, days);
 
-logEvent(event);
-logTime(days);
+const agreeOrDisagree = (first, second) => {
+  
+  if (first === second){
+    console.log("You Agree");
+  } else {
+    console.log("You Disagree")
+  }
+}
+console.log(agreeOrDisagree("apple", "apple"))
+console.log(agreeOrDisagree("orange", "pear"))
+
+
+//Life Age
+function lifePhase(age) {
+
+  if (0 <= age && age <= 3){
+    return 'baby';
+  } else if (4 <= age && age <= 12){
+    return 'child'
+  } else if (13 <= age && age <= 19){
+    return 'teen'
+  } else if (20 <= age && age <= 64){
+    return 'adult'
+  } else if (65 <= age && age <= 140){
+    return 'senior citizen'
+  } else {
+    return 'This is not a valid age'
+    }
+  }
+  console.log(lifePhase(2))
+  console.log(lifePhase(10))
+  console.log(lifePhase(15))
+  console.log(lifePhase(45))
+  console.log(lifePhase(100))
+  console.log(lifePhase(-8))
+
