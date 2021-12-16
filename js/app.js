@@ -374,3 +374,13 @@ return (Math.ceil(imaginaryFriends / 4));
   // Uncomment the lines below when you're ready to try out your function
   console.log(numImaginaryFriends(20)) 
   console.log(numImaginaryFriends(10))
+
+    // silly sentence.
+    const sillySentence = (adj, verb, noun) => {
+
+      return (`I am so ${adj} because I ${verb} coding! Time to write some more awesome ${noun}!`);  
+      }
+      
+      // Uncomment the line below when you're ready to try out your function
+      console.log(sillySentence('excited', 'love', 'functions')) 
+      console.log(sillySentence('happy', 'live for', 'arrow functions'))
