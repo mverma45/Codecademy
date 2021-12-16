@@ -362,3 +362,13 @@ console.log(truthyOrFalsy(3))
 console.log(truthyOrFalsy(90))
 console.log(truthyOrFalsy(true))
 console.log(truthyOrFalsy(false))
+
+function numImaginaryFriends() {
+     (Math.ceil(numImaginaryFriends))
+  
+    }
+
+  // Uncomment the lines below when you're ready to try out your function
+  console.log(numImaginaryFriends(20)) 
+  // Should print 5
+  console.log(numImaginaryFriends(10)) 
