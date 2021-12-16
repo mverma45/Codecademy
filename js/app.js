@@ -365,12 +365,12 @@ console.log(truthyOrFalsy(false))
 
 
 //Imaginary Friends
-function numImaginaryFriends() {
-     (Math.ceil(numImaginaryFriends))
-  
+function numImaginaryFriends(imaginaryFriends) {
+
+return (Math.ceil(imaginaryFriends / 4));
+
     }
 
   // Uncomment the lines below when you're ready to try out your function
   console.log(numImaginaryFriends(20)) 
-  // Should print 5
-  console.log(numImaginaryFriends(10)) 
+  console.log(numImaginaryFriends(10))
