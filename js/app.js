@@ -363,6 +363,8 @@ console.log(truthyOrFalsy(90))
 console.log(truthyOrFalsy(true))
 console.log(truthyOrFalsy(false))
 
+
+//Imaginary Friends
 function numImaginaryFriends() {
      (Math.ceil(numImaginaryFriends))
   
