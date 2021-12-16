@@ -328,3 +328,37 @@ const reportingForDuty = (rank, lastName) => {
       return die1 + die2;
       console.log(rollTheDice(die1 + die2 ));
     }
+
+    function calculateWeight(earthWeight, planet) {
+      switch (planet){
+        case 'Mercury':
+            return earthWeight * 0.378;
+        case 'Venus':
+            return  earthWeight * 0.907;
+        case 'Mars':
+            return  earthWeight * 0.377;
+        case 'Jupiter':
+             return earthWeight * 2.36;
+        case 'Saturn':
+             return earthWeight * 0.916;
+        default:
+            return  'Invalid Planet Entry. Try: Mercury, Venus, Mars, Jupiter, or Saturn.'
+            }
+        }
+          // Uncomment the line below when you're ready to try out your function
+      console.log(calculateWeight(100, 'Mercury'));
+
+
+//truthy or falsy
+const truthyOrFalsy = (num) => {
+  if (num = num) {
+    return true
+  } else
+  return false
+}
+
+console.log(truthyOrFalsy(0))
+console.log(truthyOrFalsy(3))
+console.log(truthyOrFalsy(90))
+console.log(truthyOrFalsy(true))
+console.log(truthyOrFalsy(false))
