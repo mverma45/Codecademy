@@ -432,3 +432,26 @@ return (Math.ceil(imaginaryFriends / 4));
            console.log(whatRelation(3))
            console.log(whatRelation(100))
         
+// Tip Calculator
+const tipCalculator = (quality, total) => {
+
+  if (quality === 'excellent'){
+    return (total * .30);
+  } else if (quality === 'good'){
+    return (total * .20);
+  } else if (quality === 'ok' || quality === 'okay'){
+    return (total * .15);
+  } else if (quality === 'bad'){
+    return (total * .05);
+  } else {
+    return (total * .18)
+  }
+  }
+  
+  // Uncomment the line below when you're ready to try out your function
+  console.log(tipCalculator('good', 100))
+  console.log(tipCalculator('ok', 100))
+  console.log(tipCalculator('okay', 100))
+  //should return 20
+  
+  // We encourage you to add more function calls of your own to test your code!
