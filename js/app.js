@@ -480,3 +480,24 @@ const tipCalculator = (quality, total) => {
     console.log(toEmoticon("winky face"))
     console.log(toEmoticon("heart"))
     console.log(toEmoticon("yoyoyo"))
+
+    // Create function below
+function colorMessage(favoriteColor, shirtColor) {
+
+  if(favoriteColor === shirtColor){
+    return 'The shirt is your favorite color!'
+  } else {
+    return 'That is a nice color.'
+  }
+}
+  console.log(colorMessage())
+
+
+  // Write function below
+const isEven = (number) => {
+  return number % 2 === 0;
+ } 
+ console.log(isEven(2))
+ console.log(isEven(3))
+
+ 
