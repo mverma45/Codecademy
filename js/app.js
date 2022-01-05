@@ -595,3 +595,11 @@ console.log(condiments);
 utensils[3] = ('Spoon');
 
 console.log(utensils);
+
+//push function
+
+const chores = ['wash dishes', 'do laundry', 'take out trash'];
+
+chores.push('wash car', 'code');
+
+console.log(chores);
