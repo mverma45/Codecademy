@@ -524,3 +524,74 @@ const isEven = (number) => {
 
 console.log(numberDigits(4))
 console.log(numberDigits(-90))
+
+
+// SQL database
+// CREATE TABLE friends (
+//   id INTEGER,
+//   name TEXT,
+//   birthday DATE
+// );
+
+// INSERT INTO friends (id, name, birthday)
+// VALUES (1, 'Ororo Munroe', '1940-05-30');
+
+// INSERT INTO friends (id, name, birthday)
+// VALUES (2, 'Jason Cowley', '1983-06-16');
+
+// INSERT INTO friends (id, name, birthday)
+// VALUES (3, 'Artur Kapriyelov', '1985-05-09');
+
+// UPDATE friends
+// SET name = 'Storm'
+// WHERE id = 1;
+
+// ALTER TABLE friends
+// ADD email TEXT;
+
+// UPDATE friends
+// SET email ='storm@codecademy.com'
+// WHERE id = 1;
+
+// UPDATE friends
+// SET email ='jason@jason.net'
+// WHERE id = 2;
+
+// UPDATE friends
+// SET email = 'artur@artur.com'
+// WHERE id = 3;
+
+// DELETE FROM friends
+// WHERE id = 1;
+
+// SELECT *
+// FROM friends;
+
+//arrays
+const famousSayings = ['Fortune favors the brave.', 'A joke is a very serious thing.', 'Where there is love there is life.'];
+const listItem = (famousSayings[0]);
+console.log(famousSayings[0]);
+console.log(famousSayings[2]);
+console.log(famousSayings[3]);
+
+// Re assigning arrays
+
+// re assigning element in index 0 to Mayo, then printing it out.
+
+let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+
+const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+
+condiments[0] = 'Mayo'
+
+console.log(condiments);
+
+// re assinging condiments to Mayo and printing it out.
+condiments = ['Mayo'];
+
+console.log(condiments);
+
+// re assinging last item in utensils to Spoon and printing it out.
+utensils[3] = ('Spoon');
+
+console.log(utensils);
