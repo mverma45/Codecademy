@@ -642,3 +642,8 @@ console.log(groceryList);
 console.log('slices the list leaving 3 items array notation. Removes 1[0] and items after 4[3]')
 //slices the list, removes the first item, and the item after 4, 
 console.log(groceryList.slice(1,4));
+
+//when doing console.log(groceryList) it prints the original list, it does not mutate the list
+console.log('Prints the orignial groceryList not the sliced one.  slice() does not mutate aka change the list')
+
+console.log(groceryList)
