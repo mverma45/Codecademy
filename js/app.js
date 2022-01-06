@@ -647,3 +647,32 @@ console.log(groceryList.slice(1,4));
 console.log('Prints the orignial groceryList not the sliced one.  slice() does not mutate aka change the list')
 
 console.log(groceryList)
+
+//indexOf
+console.log('index Of pasta')
+console.log(groceryList.indexOf('pasta'));
+// console.log(pastaIndex);
+
+const concept = ['arrays', 'can', 'be', 'mutated'];
+
+//array arr[3] assigns the element to 'MUTATED'
+function changeArr(arr){
+  arr[3] = 'MUTATED';
+}
+
+//function changeArr called with a parameter of concept
+changeArr(concept);
+
+//logs concept
+
+console.log(concept);
+
+//function removeElement called with parameter of newArr
+function removeElement(newArr){
+  //newArr pops the last element in the array
+  newArr.pop()
+}
+//function removeElement called with parameter concept
+removeElement(concept);
+//logs concept
+console.log(concept);
