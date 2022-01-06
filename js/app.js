@@ -618,3 +618,27 @@ chores2.pop();
 
 // prints the array
 console.log(chores2);
+
+const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+
+//prints grocery list
+console.log('Complete grocery List')
+console.log(groceryList);
+
+console.log('removes first time from grocery list')
+//removes first item in the list
+groceryList.shift();
+
+//prints the groceryList
+console.log(groceryList);
+
+console.log('adds popcorn to the grocery list, in the front of the list')
+//adds popcorn to the front
+groceryList.unshift('popcorn');
+
+//prints the groceryList
+console.log(groceryList);
+
+console.log('slices the list leaving 3 items array notation. Removes 1[0] and items after 4[3]')
+//slices the list, removes the first item, and the item after 4, 
+console.log(groceryList.slice(1,4));
