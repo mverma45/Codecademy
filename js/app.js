@@ -596,10 +596,25 @@ utensils[3] = ('Spoon');
 
 console.log(utensils);
 
-//push function
+//push() function this will push items in the array
 
 const chores = ['wash dishes', 'do laundry', 'take out trash'];
 
+//pushes an item in the array
 chores.push('wash car', 'code');
 
+//prints the array
 console.log(chores);
+
+//pop() function no arguments passed this will pop the last item in the array.
+
+const chores2 = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+
+//prints the array before the pop.
+console.log(chores2);
+
+//removes last item in the array
+chores2.pop();
+
+// prints the array
+console.log(chores2);
