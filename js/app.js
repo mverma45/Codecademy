@@ -676,3 +676,20 @@ function removeElement(newArr){
 removeElement(concept);
 //logs concept
 console.log(concept);
+
+const  numberClusters = [[1, 2], [3, 4], [5, 6]];
+
+const target = numberClusters[2][2];
+console.log(numberClusters)
+
+
+// More practice with arrays[]
+// Looking for more ways to practice? Consider trying these:
+//
+//     Use the .length property to find the last element of an array.
+//     Use the other methods in MDN documentation not mentioned in the lesson.
+//     Take all the elements in an array and make a string.
+//     Find the return value of calling .push() on an array.
+//     Nest an array within an array.
+//     Access an element in the nested array.
+
