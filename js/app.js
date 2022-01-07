@@ -679,7 +679,7 @@ console.log(concept);
 
 const  numberClusters = [[1, 2], [3, 4], [5, 6]];
 
-const target = numberClusters[2][2];
+const target = numberClusters[2][1];
 console.log(numberClusters)
 
 
@@ -693,3 +693,24 @@ console.log(numberClusters)
 //     Nest an array within an array.
 //     Access an element in the nested array.
 
+const fruits = ['Apples', 'Oranges', 'Pears', 'Mangos']; 
+fruits[2] = 'Bananas';
+console.log(fruits); 
+
+//Program Secret Message
+
+let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+//prints array length
+console.log('prints the length of the array')
+console.log(secretMessage.length)
+secretMessage.pop()
+console.log('prints the length of the array after popping')
+console.log(secretMessage.length);
+secretMessage.push('to', 'Program');
+secretMessage[7] = 'right';
+const learning = secretMessage.shift();
+secretMessage.unshift('Programming');
+secretMessage.splice(6,5,'know,');
+//prints the secret message
+console.log('prints the secret message')
+console.log(secretMessage.join(' '));
