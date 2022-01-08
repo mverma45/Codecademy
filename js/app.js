@@ -727,3 +727,23 @@ console.log(vacationSpots)
 console.log(vacationSpots[0])
 console.log(vacationSpots[1])
 console.log(vacationSpots[2])
+
+
+//for loop
+console.log('for loop')
+for(let counter = 0; counter <=10; counter++){
+  console.log(counter)
+}
+// reverse for loop
+console.log('reverse loop')
+for (let counter = 10; counter >= 0; counter--){
+  console.log(counter);
+}
+
+//vacations spots
+const vacationSpots2 = ['Bali', 'Paris', 'Tulum'];
+
+console.log(vacationSpots2)
+for (let i = 0; i < vacationSpots2.length; i++){
+  console.log('I would love to visit ' + vacationSpots2[i]);
+}
