@@ -701,12 +701,16 @@ console.log(fruits);
 
 let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
 //prints array length
+console.log('Original Secret Message')
+console.log(secretMessage.join(' '));
 console.log('prints the length of the array')
 console.log(secretMessage.length)
 secretMessage.pop()
 console.log('prints the length of the array after popping')
 console.log(secretMessage.length);
 secretMessage.push('to', 'Program');
+console.log('added words to an array')
+console.log(secretMessage.join(' '))
 secretMessage[7] = 'right';
 const learning = secretMessage.shift();
 secretMessage.unshift('Programming');
@@ -714,3 +718,12 @@ secretMessage.splice(6,5,'know,');
 //prints the secret message
 console.log('prints the secret message')
 console.log(secretMessage.join(' '));
+
+//writing loops manually
+
+const vacationSpots = ['Miami', 'North Carolina', 'Denver']
+
+console.log(vacationSpots)
+console.log(vacationSpots[0])
+console.log(vacationSpots[1])
+console.log(vacationSpots[2])
