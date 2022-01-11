@@ -727,3 +727,55 @@ console.log(vacationSpots)
 console.log(vacationSpots[0])
 console.log(vacationSpots[1])
 console.log(vacationSpots[2])
+
+// Write your code below
+let bobsFriends = ['Erik', 'John', 'Karl', 'Steve']
+let tinasFriends = ['Jessica', 'Karl', 'Erik']
+let mutualFriends = []
+for (let i = 0; i < bobsFriends.length; i++){
+    if(bobsFriends[i] === bobsFriends[i]){
+      console.log("Bobs friends " + bobsFriends[i])
+    }
+    for (let j = 0; j < tinasFriends.length; j++){
+    if(bobsFriends[i] === tinasFriends[j]){
+      console.log("Tinas friends " + tinasFriends[j])
+    }
+  for (let m = 0; m < mutualFriends.length; m++){
+    if(mutualFriends[m] === bobsFriends[i] && tinasFriends[j]){
+  console.log("Our mutual friends " + bobsFriends[i] && tinasFriends)
+    }
+  }
+  if(bobsFriends[i] === tinasFriends[j]){
+    console.log('Bob and Tina have these friends in common: ' + bobsFriends[i] && tinasFriends[j])
+  }
+}
+}
+//Cards
+const cards = ['diamond', 'spade', 'heart', 'club'];
+
+// Write your code below
+let currentCard = 'spade'
+while (currentCard != 'spade'){
+currentCard = cards[Math.floor(Math.random() * 4)];
+console.log(currentCard);
+}
+
+// Write your code below
+let cupsOfSugarNeeded = 3;
+let cupsAdded = 0;
+do {
+  cupsAdded ++;
+  console.log(cupsAdded + ' cup(s) was added')
+} while (cupsAdded < cupsOfSugarNeeded);
+
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+
+// Write your code below
+for (let i = 0; i < rapperArray.length; i++){
+  console.log(rapperArray[i]);
+  if (rapperArray[i] === 'Notorious B.I.G.'){
+    break; // breaks the loop after it meets the if statement
+  }
+}
+
+console.log("And if you don't know, now you know.");
