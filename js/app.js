@@ -774,7 +774,7 @@ const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
 for (let i = 0; i < rapperArray.length; i++){
   console.log(rapperArray[i]);
   if (rapperArray[i] === 'Notorious B.I.G.'){
-    break; // breaks the loop after it meets the if statement
+    break; // breaks the loop after it meets the if statement, if the break statement isn't here it won't break the loop
   }
 }
 
