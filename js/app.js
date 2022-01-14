@@ -802,3 +802,51 @@ for(let i = 0; i < input.length; i++){
 }
 console.log("Your input is " + input)
 console.log("In whale talk this is " + resultArray.join(' ').toUpperCase());
+
+
+//for loop
+const hobbies = ['Basketball', 'Programming', 'Excercise'];
+
+for(let hobby = 0; hobby < hobbies.length; hobby++){
+  console.log(`I enjoy ${hobbies[hobby]}`);
+}
+// for of loop
+const hobbee = ['Work', 'Computers', 'Traveling'];
+for(const hobbis of hobbee){
+  console.log(`I enjoy ${hobbis}`);
+}
+
+//iterating through a string
+let username = 'manendar';
+for(let char of username){
+  console.log(char)
+}
+
+//break loop, this will not print what is in the if statement it will break before it prints
+const birds = ['Shoebill','Cockatrice','Basan','Terrorbird','Parotia','Kakapo'];
+for(const bird of birds){
+  if(bird === 'Basan'){
+    break;
+  }
+  console.log(bird)
+}
+
+//prints out each letter indivually.
+const spellingWord = 'hippopotamus';
+
+for(let char of spellingWord){
+  console.log(char)
+}
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  'Active Mission' : true,
+  homePlanet : 'Earth', 
+  numCrew: 5
+ };
+
+let propName =  'Active Mission';
+
+// Write your code below
+let isActive = spaceship['Active Mission'];
+console.log(spaceship['Active Mission']);
