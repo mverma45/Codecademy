@@ -850,3 +850,18 @@ let propName =  'Active Mission';
 // Write your code below
 let isActive = spaceship['Active Mission'];
 console.log(spaceship['Active Mission']);
+console.log(spaceship['Active Mission']);
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth',
+  color: 'silver',
+  'Secret Mission' : 'Discover life outside of Earth.'
+};
+
+// Write your code below
+spaceship.color = 'glorious gold';
+spaceship.numEngines = 7;
+
+//delete operator to delete the secret mission using bracket notation.
+delete spaceship['Secret Mission'];
