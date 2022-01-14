@@ -838,29 +838,44 @@ for(let char of spellingWord){
   console.log(char)
 }
 
-let spaceship = {
-  'Fuel Type' : 'Turbo Fuel',
-  'Active Mission' : true,
-  homePlanet : 'Earth', 
-  numCrew: 5
- };
+// let spaceship = {
+//   'Fuel Type' : 'Turbo Fuel',
+//   'Active Mission' : true,
+//   homePlanet : 'Earth', 
+//   numCrew: 5
+//  };
 
-let propName =  'Active Mission';
+// let propName =  'Active Mission';
 
-// Write your code below
-let isActive = spaceship['Active Mission'];
-console.log(spaceship['Active Mission']);
+// // Write your code below
+// let isActive = spaceShip['Active Mission'];
+// console.log(spaceShip['Active Mission']);
 
-let spaceship = {
-  'Fuel Type' : 'Turbo Fuel',
-  homePlanet : 'Earth',
-  color: 'silver',
-  'Secret Mission' : 'Discover life outside of Earth.'
-};
+// let spaceShip = {
+//   'Fuel Type' : 'Turbo Fuel',
+//   homePlanet : 'Earth',
+//   color: 'silver',
+//   'Secret Mission' : 'Discover life outside of Earth.'
+// };
 
-// Write your code below
-spaceship.color = 'glorious gold';
-spaceship.numEngines = 7;
+// // Write your code below
+// spaceShip.color = 'glorious gold';
+// spaceShip.numEngines = 7;
 
-//delete operator to delete the secret mission using bracket notation.
-delete spaceship['Secret Mission'];
+// //delete operator to delete the secret mission using bracket notation.
+// delete spaceShip['Secret Mission'];
+
+
+//Take over the planet
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+
+const alienShip = {
+  retreat() {
+    console.log(retreatMessage)
+  },
+  takeOff(){
+    console.log('Spim... Borp... Glix... Blastoff!')
+  },
+}
+alienShip.retreat();
+alienShip.takeOff();
