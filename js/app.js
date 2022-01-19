@@ -912,3 +912,25 @@ let capFave = spaceship.crew.captain['favorite foods'][0];
 
 let firstPassenger = spaceship.passengers[0];
 
+let spaceships = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth'
+};
+
+// Write your code below
+// function greenEnergy object as a parameter, set the object as a parameter set the object as fuel type and fuel type as avoocado oil
+let greenEnergy = obj => {
+obj['Fuel Type'] = 'avocado oil';
+  }
+
+  // function remotelyDisable object as a parameter, sets or resasigns that object as disabled property to true
+let remotelyDisable = obj => {
+  obj.disabled = true;
+}
+
+//calling the two functions with spaceship object
+greenEnergy(spaceships);
+remotelyDisable(spaceships);
+
+//console logs spaceship
+console.log(spaceships)
