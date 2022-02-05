@@ -4,504 +4,491 @@ let runnerAge = 25;
 
 if (runnerAge === 18 && earlyReg === true) {
   raceNumber += 1000;
-  console.log('')
+  console.log("");
 } else if (runnerAge > 18 && earlyReg === false) {
-  console.log(`Your race is at a 11:00 AM.  Your race number is ${raceNumber}.`);
-} else if (runnerAge < 18){
+  console.log(
+    `Your race is at a 11:00 AM.  Your race number is ${raceNumber}.`
+  );
+} else if (runnerAge < 18) {
   console.log(`Your race is at 12:30 PM. Your race number is ${raceNumber}.`);
-} else if (runnerAge == 18){
-  console.log('Pleae see the registration desk for more information.')
+} else if (runnerAge == 18) {
+  console.log("Pleae see the registration desk for more information.");
 }
 
-
 //  assigning a default value
-function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
-    console.log(`Remember to buy ${item1}`);
-    console.log(`Remember to buy ${item2}`);
-    console.log(`Remember to buy ${item3}`);
-  }
+function makeShoppingList(item1 = "milk", item2 = "bread", item3 = "eggs") {
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
 
 //return function
-  function monitorCount(rows, columns) {
-    return rows * columns
-    };
-    const numOfMonitors = monitorCount(5, 4) 
-    console.log(numOfMonitors);
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+const numOfMonitors = monitorCount(5, 4);
+console.log(numOfMonitors);
 
-    // cost of monitors, helper functions multiple functions
-    function monitorCount(rows, columns) {
-        return rows * columns;
-      }
-      function costOfMonitors(rows, columns){
-        return monitorCount(rows, columns) * 200;
-      }
-      const totalCost = costOfMonitors(5, 4)
-      
-      //Plants need water
-      console.log(totalCost);
-      const plantNeedsWater = function (day, plantNeedsWater){
-        if (day === 'Wednesday'){
-          return true;
-        } else {
-          return false;
-        }
-        console.log(plantNeedsWater('Tuesday'))
-        }
+// cost of monitors, helper functions multiple functions
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+function costOfMonitors(rows, columns) {
+  return monitorCount(rows, columns) * 200;
+}
+const totalCost = costOfMonitors(5, 4);
 
-        //same code as above but just an arrow function.
-        const plantNeedsWater2 = (day) => {
-          if (day === 'Wednesday') {
-            return true;
-          } else {
-            return false;
-          }
-        console.log(plantNeedsWater2('Wednesday'))
-        };
-        
-        //same code as above but it's a implicit return line only has one parameter and it's turned into a teranary operator.
-        
-        const plantNeedsWater3 = day => day === 'Wednesday' ? true : false;
+//Plants need water
+console.log(totalCost);
+const plantNeedsWater = function (day, plantNeedsWater) {
+  if (day === "Wednesday") {
+    return true;
+  } else {
+    return false;
+  }
+  console.log(plantNeedsWater("Tuesday"));
+};
 
-        // Rock, Paper, Scissors Auto win with Bomb
+//same code as above but just an arrow function.
+const plantNeedsWater2 = (day) => {
+  if (day === "Wednesday") {
+    return true;
+  } else {
+    return false;
+  }
+  console.log(plantNeedsWater2("Wednesday"));
+};
 
-        const getUserChoice = userInput => {
-          userInput = userInput.toLowerCase();
-          
-          if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb'){
-            return userInput;
-          } else {
-            console.log('Error!');
-        } 
-      };
-          const getComputerChoice = () => {
-          const randomNumber = Math.floor(Math.random() * 3);
-          switch (randomNumber){
-            case 0:
-              return 'rock';
-            case 1:
-              return 'paper';
-            case 2:
-              return 'scissors';
-            }
-          }
-          const determineWinner = (userChoice, computerChoice) => {
-          if (userChoice === computerChoice) {
-            return 'the game was a tie';
-          }
-        
-          if (userChoice === 'rock') {
-            if (computerChoice === 'paper') {
-           return 'You lost, the computer beat you'
-            } else 
-             return 'Congratulations, you won'
-            }
-            
-          if (userChoice === 'paper'){
-            if (computerChoice === 'scissors') {
-           return 'You lost, the computer beat you'
-            } else 
-             return 'Congratulations, you won'
-          }
-         
-          if (userChoice === 'scissors') {
-            if (computerChoice === 'rock') {
-              return 'You lost, the computer beat you'
-            } else 
-            return 'Congratulations, you won'
-          }      
-      
-      
-        if (userChoice === 'bomb'){
-          return 'Congratulations, you won'
-        }
-      };
-          const playGame = () => {
-            const userChoice = getUserChoice('bomb');
-            const computerChoice = getComputerChoice();
-            console.log ('You threw: ' + userChoice);
-            console.log ('The Computer threw: ' + computerChoice);
-            console.log(determineWinner(userChoice, computerChoice));
-          };
+//same code as above but it's a implicit return line only has one parameter and it's turned into a teranary operator.
 
-          playGame();
+const plantNeedsWater3 = (day) => (day === "Wednesday" ? true : false);
 
-          //sleep calculator
-          
-          const getSleepHours = day => {
-            if (day === 'Monday'){
-              return 8;
-            } else if (day === 'Tuesday'){
-              return 5;
-            } else if (day === 'Wednesday'){
-              return 9;
-            } else if (day === 'Thursday') {
-              return 10;
-            } else if (day == 'Friday') {
-              return 9;
-            } else if (day == 'Saturday') {
-              return 8;
-            } else (day == 'Sunday') 
-            return 11;
-          };
-            console.log(getSleepHours('Monday'));
-            console.log(getSleepHours('Tuesday'));
-            console.log(getSleepHours('Wedneday'));
-            console.log(getSleepHours('Thursday'));
-            console.log(getSleepHours('Friday'));
-            console.log(getSleepHours('Saturday'));
-            console.log(getSleepHours('Sunday'));
-          
-          const getActualSleepHours = () => {
-           return getSleepHours('Monday')
-          + getSleepHours('Tuesday')
-          + getSleepHours('Wednesday')
-          + getSleepHours('Thursday')
-          + getSleepHours('Friday')
-          + getSleepHours('Saturday')
-          + getSleepHours('Sunday')
-      
-        }; 
-          
-          console.log(getSleepHours('Monday'));
-          console.log(getActualSleepHours());
+// Rock, Paper, Scissors Auto win with Bomb
 
-          const getIdealSleepHours = () => {
-          let idealHours = 8;
-          return idealHours * 7;
-          };
-          
-          // console.log(getIdealSleepHours());
-          
-          const calculateSleepDebt = () => {
-            const actualSleepHours = getActualSleepHours();
-            const idealSleepHours = getIdealSleepHours();
-          
-          
-          if (actualSleepHours === idealSleepHours) {
-            console.log ('The user got the perfect amount of sleep');
-          } else if (actualSleepHours > idealSleepHours) {
-            console.log ("The user got " + (actualSleepHours - idealSleepHours) + " more hours of sleep than needed");
-          } else if (actualSleepHours < idealSleepHours) {
-            console.log ("The user should get some rest.  Because you slept " + (idealSleepHours - actualSleepHours) + " hours less this week.");
-          } else {
-            console.log('Error, Something went wrong.')
-          }
-        }
-          calculateSleepDebt()
+const getUserChoice = (userInput) => {
+  userInput = userInput.toLowerCase();
 
-//Scope 
+  if (
+    userInput === "rock" ||
+    userInput === "paper" ||
+    userInput === "scissors" ||
+    userInput === "bomb"
+  ) {
+    return userInput;
+  } else {
+    console.log("Error!");
+  }
+};
+const getComputerChoice = () => {
+  const randomNumber = Math.floor(Math.random() * 3);
+  switch (randomNumber) {
+    case 0:
+      return "rock";
+    case 1:
+      return "paper";
+    case 2:
+      return "scissors";
+  }
+};
+const determineWinner = (userChoice, computerChoice) => {
+  if (userChoice === computerChoice) {
+    return "the game was a tie";
+  }
 
-          // The scope of `random` is too loose 
+  if (userChoice === "rock") {
+    if (computerChoice === "paper") {
+      return "You lost, the computer beat you";
+    } else return "Congratulations, you won";
+  }
 
-const name = 'Nala';
+  if (userChoice === "paper") {
+    if (computerChoice === "scissors") {
+      return "You lost, the computer beat you";
+    } else return "Congratulations, you won";
+  }
+
+  if (userChoice === "scissors") {
+    if (computerChoice === "rock") {
+      return "You lost, the computer beat you";
+    } else return "Congratulations, you won";
+  }
+
+  if (userChoice === "bomb") {
+    return "Congratulations, you won";
+  }
+};
+const playGame = () => {
+  const userChoice = getUserChoice("bomb");
+  const computerChoice = getComputerChoice();
+  console.log("You threw: " + userChoice);
+  console.log("The Computer threw: " + computerChoice);
+  console.log(determineWinner(userChoice, computerChoice));
+};
+
+playGame();
+
+//sleep calculator
+
+const getSleepHours = (day) => {
+  if (day === "Monday") {
+    return 8;
+  } else if (day === "Tuesday") {
+    return 5;
+  } else if (day === "Wednesday") {
+    return 9;
+  } else if (day === "Thursday") {
+    return 10;
+  } else if (day == "Friday") {
+    return 9;
+  } else if (day == "Saturday") {
+    return 8;
+  } else day == "Sunday";
+  return 11;
+};
+console.log(getSleepHours("Monday"));
+console.log(getSleepHours("Tuesday"));
+console.log(getSleepHours("Wedneday"));
+console.log(getSleepHours("Thursday"));
+console.log(getSleepHours("Friday"));
+console.log(getSleepHours("Saturday"));
+console.log(getSleepHours("Sunday"));
+
+const getActualSleepHours = () => {
+  return (
+    getSleepHours("Monday") +
+    getSleepHours("Tuesday") +
+    getSleepHours("Wednesday") +
+    getSleepHours("Thursday") +
+    getSleepHours("Friday") +
+    getSleepHours("Saturday") +
+    getSleepHours("Sunday")
+  );
+};
+
+console.log(getSleepHours("Monday"));
+console.log(getActualSleepHours());
+
+const getIdealSleepHours = () => {
+  let idealHours = 8;
+  return idealHours * 7;
+};
+
+// console.log(getIdealSleepHours());
+
+const calculateSleepDebt = () => {
+  const actualSleepHours = getActualSleepHours();
+  const idealSleepHours = getIdealSleepHours();
+
+  if (actualSleepHours === idealSleepHours) {
+    console.log("The user got the perfect amount of sleep");
+  } else if (actualSleepHours > idealSleepHours) {
+    console.log(
+      "The user got " +
+        (actualSleepHours - idealSleepHours) +
+        " more hours of sleep than needed"
+    );
+  } else if (actualSleepHours < idealSleepHours) {
+    console.log(
+      "The user should get some rest.  Because you slept " +
+        (idealSleepHours - actualSleepHours) +
+        " hours less this week."
+    );
+  } else {
+    console.log("Error, Something went wrong.");
+  }
+};
+calculateSleepDebt();
+
+//Scope
+
+// The scope of `random` is too loose
+
+const name = "Nala";
 const getRandEvent = () => {
-const random = Math.floor(Math.random() * 3);
+  const random = Math.floor(Math.random() * 3);
   if (random === 0) {
-    return 'Marathon';
+    return "Marathon";
   } else if (random === 1) {
-    return 'Triathlon';
+    return "Triathlon";
   } else if (random === 2) {
-    return 'Pentathlon';
+    return "Pentathlon";
   }
 };
 
-// The scope of `days` is too tight 
-const getTrainingDays = event => {
-let days;
-  if (event === 'Marathon') {
-  days = 50;
-  } else if (event === 'Triathlon') {
-  days = 100;
-  } else if (event === 'Pentathlon') {
+// The scope of `days` is too tight
+const getTrainingDays = (event) => {
+  let days;
+  if (event === "Marathon") {
+    days = 50;
+  } else if (event === "Triathlon") {
+    days = 100;
+  } else if (event === "Pentathlon") {
     days = 200;
   }
   return days;
 };
 
-// The scope of `name` is too tight 
+// The scope of `name` is too tight
 const logEvent = (name, event) => {
   // const name = 'Nala';
   console.log(`${name}'s event is: ${event}`);
 };
 
 const logTime = (name, days) => {
-  
   console.log(`${name}'s time to train is: ${days} days`);
 };
 
 const event = getRandEvent();
 const days = getTrainingDays(event);
-// Define a `name` variable. Use it as an argument after updating logEvent and logTime 
+// Define a `name` variable. Use it as an argument after updating logEvent and logTime
 
 const event2 = getRandEvent();
 const days2 = getTrainingDays(event2);
-const name2 = 'Warren';
- 
+const name2 = "Warren";
+
 logEvent(name2, event2);
 logTime(name2, days2);
 logEvent(name, event);
 logTime(name, days);
 
 const agreeOrDisagree = (first, second) => {
-  
-  if (first === second){
+  if (first === second) {
     console.log("You Agree");
   } else {
-    console.log("You Disagree")
+    console.log("You Disagree");
   }
-}
-console.log(agreeOrDisagree("apple", "apple"))
-console.log(agreeOrDisagree("orange", "pear"))
-
+};
+console.log(agreeOrDisagree("apple", "apple"));
+console.log(agreeOrDisagree("orange", "pear"));
 
 //Life Age
 function lifePhase(age) {
-
-  if (0 <= age && age <= 3){
-    return 'baby';
-  } else if (4 <= age && age <= 12){
-    return 'child'
-  } else if (13 <= age && age <= 19){
-    return 'teen'
-  } else if (20 <= age && age <= 64){
-    return 'adult'
-  } else if (65 <= age && age <= 140){
-    return 'senior citizen'
+  if (0 <= age && age <= 3) {
+    return "baby";
+  } else if (4 <= age && age <= 12) {
+    return "child";
+  } else if (13 <= age && age <= 19) {
+    return "teen";
+  } else if (20 <= age && age <= 64) {
+    return "adult";
+  } else if (65 <= age && age <= 140) {
+    return "senior citizen";
   } else {
-    return 'This is not a valid age'
-    }
+    return "This is not a valid age";
   }
-  console.log(lifePhase(2))
-  console.log(lifePhase(10))
-  console.log(lifePhase(15))
-  console.log(lifePhase(45))
-  console.log(lifePhase(100))
-  console.log(lifePhase(-8))
-
-  //Grades
-const finalGrade = (g1, g2, g3) => {
-
-  if ((g1 < 0 || g1 > 100) || (g2 < 0 || g2 > 100) || (g3 < 0 || g3 > 100)){
-    return 'You have entered an invalid grade.'
-  }
-  let avg = (g1 + g2 + g3 ) / 3;
-  if(avg >= 0 && avg <= 59) {
-      return 'F'
-} else if(avg >= 60 && avg <=69){
-    return 'D'
-} else if(avg >=70 && avg <=79){
-    return 'C'
-} else if(avg >=80 && avg <=89){
-    return 'B'
-} else if (avg >=90 && avg <=100){
-    return 'A'
- } 
 }
+console.log(lifePhase(2));
+console.log(lifePhase(10));
+console.log(lifePhase(15));
+console.log(lifePhase(45));
+console.log(lifePhase(100));
+console.log(lifePhase(-8));
 
-console.log(finalGrade(99, 92, 95))
-console.log(finalGrade(65, 79, 89))
+//Grades
+const finalGrade = (g1, g2, g3) => {
+  if (g1 < 0 || g1 > 100 || g2 < 0 || g2 > 100 || g3 < 0 || g3 > 100) {
+    return "You have entered an invalid grade.";
+  }
+  let avg = (g1 + g2 + g3) / 3;
+  if (avg >= 0 && avg <= 59) {
+    return "F";
+  } else if (avg >= 60 && avg <= 69) {
+    return "D";
+  } else if (avg >= 70 && avg <= 79) {
+    return "C";
+  } else if (avg >= 80 && avg <= 89) {
+    return "B";
+  } else if (avg >= 90 && avg <= 100) {
+    return "A";
+  }
+};
+
+console.log(finalGrade(99, 92, 95));
+console.log(finalGrade(65, 79, 89));
 
 //reporting for duty.
 
 const reportingForDuty = (rank, lastName) => {
+  return `${rank} ${lastName} reporting for duty!`;
+};
 
-  return (`${rank} ${lastName} reporting for duty!`)
-  } 
-  
-  
-  // Uncomment the line below when you're ready to try out your function
-  console.log(reportingForDuty('Private', 'Fido'))
-  console.log(reportingForDuty('Gen', 'Verma'))
-  console.log(reportingForDuty('Col', 'Sanders love me some chicken'))
+// Uncomment the line below when you're ready to try out your function
+console.log(reportingForDuty("Private", "Fido"));
+console.log(reportingForDuty("Gen", "Verma"));
+console.log(reportingForDuty("Col", "Sanders love me some chicken"));
 
+//rolling the Dice and returning the number as a whole number
+const rollTheDice = () => {
+  // Math.random() gives us a random number from 0 up to, but not including, 1
+  // We multiplied that by 6 to get a number between 0 and up to, but not including, 6
+  // But since we actually wanted numbers from 1 to 6, inclusive, we added 1
+  // Math.floor() rounds the number so we have a whole number
+  let die1 = Math.floor(Math.random()) * 6 + 1;
+  let die2 = Math.floor(Math.random()) * 6 + 1;
+  //returns the sum
+  return die1 + die2;
+  console.log(rollTheDice(die1 + die2));
+};
 
-  //rolling the Dice and returning the number as a whole number
-  const rollTheDice = () => {
-    
-    // Math.random() gives us a random number from 0 up to, but not including, 1
-    // We multiplied that by 6 to get a number between 0 and up to, but not including, 6
-    // But since we actually wanted numbers from 1 to 6, inclusive, we added 1
-    // Math.floor() rounds the number so we have a whole number
-      let die1 = Math.floor(Math.random()) * 6 + 1
-      let die2 = Math.floor(Math.random()) * 6 + 1
-      //returns the sum
-      return die1 + die2;
-      console.log(rollTheDice(die1 + die2 ));
-    }
-
-    function calculateWeight(earthWeight, planet) {
-      switch (planet){
-        case 'Mercury':
-            return earthWeight * 0.378;
-        case 'Venus':
-            return  earthWeight * 0.907;
-        case 'Mars':
-            return  earthWeight * 0.377;
-        case 'Jupiter':
-             return earthWeight * 2.36;
-        case 'Saturn':
-             return earthWeight * 0.916;
-        default:
-            return  'Invalid Planet Entry. Try: Mercury, Venus, Mars, Jupiter, or Saturn.'
-            }
-        }
-          // Uncomment the line below when you're ready to try out your function
-      console.log(calculateWeight(100, 'Mercury'));
-
+function calculateWeight(earthWeight, planet) {
+  switch (planet) {
+    case "Mercury":
+      return earthWeight * 0.378;
+    case "Venus":
+      return earthWeight * 0.907;
+    case "Mars":
+      return earthWeight * 0.377;
+    case "Jupiter":
+      return earthWeight * 2.36;
+    case "Saturn":
+      return earthWeight * 0.916;
+    default:
+      return "Invalid Planet Entry. Try: Mercury, Venus, Mars, Jupiter, or Saturn.";
+  }
+}
+// Uncomment the line below when you're ready to try out your function
+console.log(calculateWeight(100, "Mercury"));
 
 //truthy or falsy
 const truthyOrFalsy = (num) => {
-  if (num = num) {
-    return true
-  } else
-  return false
-}
+  if ((num = num)) {
+    return true;
+  } else return false;
+};
 
-console.log(truthyOrFalsy(0))
-console.log(truthyOrFalsy(3))
-console.log(truthyOrFalsy(90))
-console.log(truthyOrFalsy(true))
-console.log(truthyOrFalsy(false))
-
+console.log(truthyOrFalsy(0));
+console.log(truthyOrFalsy(3));
+console.log(truthyOrFalsy(90));
+console.log(truthyOrFalsy(true));
+console.log(truthyOrFalsy(false));
 
 //Imaginary Friends
 function numImaginaryFriends(imaginaryFriends) {
+  return Math.ceil(imaginaryFriends / 4);
+}
 
-return (Math.ceil(imaginaryFriends / 4));
+// Uncomment the lines below when you're ready to try out your function
+console.log(numImaginaryFriends(20));
+console.log(numImaginaryFriends(10));
 
-    }
+// silly sentence.
+const sillySentence = (adj, verb, noun) => {
+  return `I am so ${adj} because I ${verb} coding! Time to write some more awesome ${noun}!`;
+};
 
-  // Uncomment the lines below when you're ready to try out your function
-  console.log(numImaginaryFriends(20)) 
-  console.log(numImaginaryFriends(10))
+// Uncomment the line below when you're ready to try out your function
+console.log(sillySentence("excited", "love", "functions"));
+console.log(sillySentence("happy", "live for", "arrow functions"));
 
-    // silly sentence.
-    const sillySentence = (adj, verb, noun) => {
+const howOld = (age, year) => {
+  // The following two lines make it so that our function always knows the current year.
+  let dateToday = new Date();
+  let thisYear = dateToday.getFullYear();
+  // It is totally ok if your function used the current year directly!
 
-      return (`I am so ${adj} because I ${verb} coding! Time to write some more awesome ${noun}!`);  
-      }
-      
-      // Uncomment the line below when you're ready to try out your function
-      console.log(sillySentence('excited', 'love', 'functions')) 
-      console.log(sillySentence('happy', 'live for', 'arrow functions'))
+  const yearDifference = year - thisYear;
+  const newAge = age + yearDifference;
+  if (newAge > age) {
+    return `You will be ${newAge} in the year ${year}`;
+  } else if (newAge < 0) {
+    return `The year ${year} was ${-newAge} years before you were born`;
+  } else {
+    return `You were ${newAge} in the year ${year}`;
+  }
+};
 
+// relationships
+const whatRelation = (percentSharedDNA) => {
+  if (percentSharedDNA === 100) {
+    return "You are likely identical twins.";
+  }
+  if (percentSharedDNA > 34) {
+    return "You are likely parent and child or full siblings.";
+  }
+  if (percentSharedDNA > 13) {
+    return "You are likely grandparent and grandchild, aunt/uncle and niece/nephew, or half siblings.";
+  }
+  if (percentSharedDNA > 5) {
+    return "You are likely 1st cousins.";
+  }
+  if (percentSharedDNA > 1) {
+    return "You are likely 2nd cousins.";
+  }
+  if (percentSharedDNA > 0) {
+    return "You are likely 3rd cousins";
+  }
 
-        const howOld = (age, year) => {
-          // The following two lines make it so that our function always knows the current year.
-              let dateToday = new Date();
-              let thisYear = dateToday.getFullYear();
-          // It is totally ok if your function used the current year directly!
-            
-              const yearDifference = year - thisYear
-              const newAge = age + yearDifference
-              if (newAge > age) {
-                  return `You will be ${newAge} in the year ${year}`
-              } else if (newAge < 0) {
-                  return `The year ${year} was ${-newAge} years before you were born`
-              } else {
-                  return `You were ${newAge} in the year ${year}`
-              }
-          }
+  return "You are likely not related.";
+};
 
-          // relationships  
-          const whatRelation = percentSharedDNA => {
+console.log(whatRelation(34));
+console.log(whatRelation(3));
+console.log(whatRelation(100));
 
-            if (percentSharedDNA === 100) {
-            return 'You are likely identical twins.'
-            }
-            if (percentSharedDNA > 34) {
-            return 'You are likely parent and child or full siblings.'
-            }
-            if (percentSharedDNA > 13) {
-            return 'You are likely grandparent and grandchild, aunt/uncle and niece/nephew, or half siblings.'
-            }
-           if (percentSharedDNA > 5) {
-           return 'You are likely 1st cousins.'
-           }
-           if (percentSharedDNA > 1) {
-           return 'You are likely 2nd cousins.'
-           }
-           if (percentSharedDNA > 0) {
-           return 'You are likely 3rd cousins'
-           }
-           
-           return 'You are likely not related.'
-           }
-           
-           console.log(whatRelation(34))
-           console.log(whatRelation(3))
-           console.log(whatRelation(100))
-        
 // Tip Calculator
 const tipCalculator = (quality, total) => {
-
-  if (quality === 'excellent'){
-    return (total * .30);
-  } else if (quality === 'good'){
-    return (total * .20);
-  } else if (quality === 'ok' || quality === 'okay'){
-    return (total * .15);
-  } else if (quality === 'bad'){
-    return (total * .05);
+  if (quality === "excellent") {
+    return total * 0.3;
+  } else if (quality === "good") {
+    return total * 0.2;
+  } else if (quality === "ok" || quality === "okay") {
+    return total * 0.15;
+  } else if (quality === "bad") {
+    return total * 0.05;
   } else {
-    return (total * .18)
+    return total * 0.18;
   }
-  }
-  
-  // Uncomment the line below when you're ready to try out your function
-  console.log(tipCalculator('good', 100))
-  console.log(tipCalculator('ok', 100))
-  console.log(tipCalculator('okay', 100))
-  //should return 20
-  
-  // Write your function here:
+};
 
-  function toEmoticon(emotion) {
+// Uncomment the line below when you're ready to try out your function
+console.log(tipCalculator("good", 100));
+console.log(tipCalculator("ok", 100));
+console.log(tipCalculator("okay", 100));
+//should return 20
 
-    switch (emotion){
-      case 'shrug':
-        return '|_{"}_|'
-      case 'smiley face':
-        return ':)'
-      case 'frowny face':
-        return ':('
-      case 'winky face':
-        return ';)'
-      case 'heart':
-        return '<3'
-      default:
-        return '|_(* ~ *)_|'
-    }
-    
-    }
-    console.log(toEmoticon("shrug")) 
-    console.log(toEmoticon("smiley face"))
-    console.log(toEmoticon("frowny face"))
-    console.log(toEmoticon("winky face"))
-    console.log(toEmoticon("heart"))
-    console.log(toEmoticon("yoyoyo"))
+// Write your function here:
 
-    // Create function below
-function colorMessage(favoriteColor, shirtColor) {
-
-  if(favoriteColor === shirtColor){
-    return 'The shirt is your favorite color!'
-  } else {
-    return 'That is a nice color.'
+function toEmoticon(emotion) {
+  switch (emotion) {
+    case "shrug":
+      return '|_{"}_|';
+    case "smiley face":
+      return ":)";
+    case "frowny face":
+      return ":(";
+    case "winky face":
+      return ";)";
+    case "heart":
+      return "<3";
+    default:
+      return "|_(* ~ *)_|";
   }
 }
-  console.log(colorMessage())
+console.log(toEmoticon("shrug"));
+console.log(toEmoticon("smiley face"));
+console.log(toEmoticon("frowny face"));
+console.log(toEmoticon("winky face"));
+console.log(toEmoticon("heart"));
+console.log(toEmoticon("yoyoyo"));
 
+// Create function below
+function colorMessage(favoriteColor, shirtColor) {
+  if (favoriteColor === shirtColor) {
+    return "The shirt is your favorite color!";
+  } else {
+    return "That is a nice color.";
+  }
+}
+console.log(colorMessage());
 
-  // Write function below
+// Write function below
 const isEven = (number) => {
   return number % 2 === 0;
- } 
- console.log(isEven(2))
- console.log(isEven(3))
+};
+console.log(isEven(2));
+console.log(isEven(3));
 
- 
- // Create function here 
+// Create function here
 //  Create a function numberDigits() that takes the variable x as its only parameter.
 
 // If the variable x is between 0 and 9, return the string 'One digit: N', where N is the value of x. For example, numberDigits(5) would return: 'One digit: 5'
@@ -509,22 +496,21 @@ const isEven = (number) => {
 // 'Two digits: 12'
 // Any other value of x, including negative numbers, return the string 'The number is: N', where N is the value of x. For example, numberDigits(-202) would output:
 // 'The number is: -202'
-  const numberDigits = x => {
-  let numString = '';
-  if (x >= 0 && x <= 9){
-    numString = 'One digit: ' + x;
-  }else if (x >=10 && x <= 99){
-    numString = 'Two digits: ' + x;
-  }else {
-    numString = 'The number is: ' + x;
+const numberDigits = (x) => {
+  let numString = "";
+  if (x >= 0 && x <= 9) {
+    numString = "One digit: " + x;
+  } else if (x >= 10 && x <= 99) {
+    numString = "Two digits: " + x;
+  } else {
+    numString = "The number is: " + x;
   }
 
   return numString;
-}
+};
 
-console.log(numberDigits(4))
-console.log(numberDigits(-90))
-
+console.log(numberDigits(4));
+console.log(numberDigits(-90));
 
 // SQL database
 // CREATE TABLE friends (
@@ -568,8 +554,12 @@ console.log(numberDigits(-90))
 // FROM friends;
 
 //arrays
-const famousSayings = ['Fortune favors the brave.', 'A joke is a very serious thing.', 'Where there is love there is life.'];
-const listItem = (famousSayings[0]);
+const famousSayings = [
+  "Fortune favors the brave.",
+  "A joke is a very serious thing.",
+  "Where there is love there is life.",
+];
+const listItem = famousSayings[0];
 console.log(famousSayings[0]);
 console.log(famousSayings[2]);
 console.log(famousSayings[3]);
@@ -578,37 +568,43 @@ console.log(famousSayings[3]);
 
 // re assigning element in index 0 to Mayo, then printing it out.
 
-let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+let condiments = ["Ketchup", "Mustard", "Soy Sauce", "Sriracha"];
 
-const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+const utensils = ["Fork", "Knife", "Chopsticks", "Spork"];
 
-condiments[0] = 'Mayo'
+condiments[0] = "Mayo";
 
 console.log(condiments);
 
 // re assinging condiments to Mayo and printing it out.
-condiments = ['Mayo'];
+condiments = ["Mayo"];
 
 console.log(condiments);
 
 // re assinging last item in utensils to Spoon and printing it out.
-utensils[3] = ('Spoon');
+utensils[3] = "Spoon";
 
 console.log(utensils);
 
 //push() function this will push items in the array
 
-const chores = ['wash dishes', 'do laundry', 'take out trash'];
+const chores = ["wash dishes", "do laundry", "take out trash"];
 
 //pushes an item in the array
-chores.push('wash car', 'code');
+chores.push("wash car", "code");
 
 //prints the array
 console.log(chores);
 
 //pop() function no arguments passed this will pop the last item in the array.
 
-const chores2 = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+const chores2 = [
+  "wash dishes",
+  "do laundry",
+  "take out trash",
+  "cook dinner",
+  "mop floor",
+];
 
 //prints the array before the pop.
 console.log(chores2);
@@ -619,45 +615,57 @@ chores2.pop();
 // prints the array
 console.log(chores2);
 
-const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+const groceryList = [
+  "orange juice",
+  "bananas",
+  "coffee beans",
+  "brown rice",
+  "pasta",
+  "coconut oil",
+  "plantains",
+];
 
 //prints grocery list
-console.log('Complete grocery List')
+console.log("Complete grocery List");
 console.log(groceryList);
 
-console.log('removes first time from grocery list')
+console.log("removes first time from grocery list");
 //removes first item in the list
 groceryList.shift();
 
 //prints the groceryList
 console.log(groceryList);
 
-console.log('adds popcorn to the grocery list, in the front of the list')
+console.log("adds popcorn to the grocery list, in the front of the list");
 //adds popcorn to the front
-groceryList.unshift('popcorn');
+groceryList.unshift("popcorn");
 
 //prints the groceryList
 console.log(groceryList);
 
-console.log('slices the list leaving 3 items array notation. Removes 1[0] and items after 4[3]')
-//slices the list, removes the first item, and the item after 4, 
-console.log(groceryList.slice(1,4));
+console.log(
+  "slices the list leaving 3 items array notation. Removes 1[0] and items after 4[3]"
+);
+//slices the list, removes the first item, and the item after 4,
+console.log(groceryList.slice(1, 4));
 
 //when doing console.log(groceryList) it prints the original list, it does not mutate the list
-console.log('Prints the orignial groceryList not the sliced one.  slice() does not mutate aka change the list')
+console.log(
+  "Prints the orignial groceryList not the sliced one.  slice() does not mutate aka change the list"
+);
 
-console.log(groceryList)
+console.log(groceryList);
 
 //indexOf
-console.log('index Of pasta')
-console.log(groceryList.indexOf('pasta'));
+console.log("index Of pasta");
+console.log(groceryList.indexOf("pasta"));
 // console.log(pastaIndex);
 
-const concept = ['arrays', 'can', 'be', 'mutated'];
+const concept = ["arrays", "can", "be", "mutated"];
 
 //array arr[3] assigns the element to 'MUTATED'
-function changeArr(arr){
-  arr[3] = 'MUTATED';
+function changeArr(arr) {
+  arr[3] = "MUTATED";
 }
 
 //function changeArr called with a parameter of concept
@@ -668,20 +676,23 @@ changeArr(concept);
 console.log(concept);
 
 //function removeElement called with parameter of newArr
-function removeElement(newArr){
+function removeElement(newArr) {
   //newArr pops the last element in the array
-  newArr.pop()
+  newArr.pop();
 }
 //function removeElement called with parameter concept
 removeElement(concept);
 //logs concept
 console.log(concept);
 
-const  numberClusters = [[1, 2], [3, 4], [5, 6]];
+const numberClusters = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+];
 
 const target = numberClusters[2][1];
-console.log(numberClusters)
-
+console.log(numberClusters);
 
 // More practice with arrays[]
 // Looking for more ways to practice? Consider trying these:
@@ -693,155 +704,186 @@ console.log(numberClusters)
 //     Nest an array within an array.
 //     Access an element in the nested array.
 
-const fruits = ['Apples', 'Oranges', 'Pears', 'Mangos']; 
-fruits[2] = 'Bananas';
-console.log(fruits); 
+const fruits = ["Apples", "Oranges", "Pears", "Mangos"];
+fruits[2] = "Bananas";
+console.log(fruits);
 
 //Program Secret Message
 
-let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+let secretMessage = [
+  "Learning",
+  "is",
+  "not",
+  "about",
+  "what",
+  "you",
+  "get",
+  "easily",
+  "the",
+  "first",
+  "time,",
+  "it",
+  "is",
+  "about",
+  "what",
+  "you",
+  "can",
+  "figure",
+  "out.",
+  "-2015,",
+  "Chris",
+  "Pine,",
+  "Learn",
+  "JavaScript",
+];
 //prints array length
-console.log('Original Secret Message')
-console.log(secretMessage.join(' '));
-console.log('prints the length of the array')
-console.log(secretMessage.length)
-secretMessage.pop()
-console.log('prints the length of the array after popping')
+console.log("Original Secret Message");
+console.log(secretMessage.join(" "));
+console.log("prints the length of the array");
 console.log(secretMessage.length);
-secretMessage.push('to', 'Program');
-console.log('added words to an array')
-console.log(secretMessage.join(' '))
-secretMessage[7] = 'right';
+secretMessage.pop();
+console.log("prints the length of the array after popping");
+console.log(secretMessage.length);
+secretMessage.push("to", "Program");
+console.log("added words to an array");
+console.log(secretMessage.join(" "));
+secretMessage[7] = "right";
 const learning = secretMessage.shift();
-secretMessage.unshift('Programming');
-secretMessage.splice(6,5,'know,');
+secretMessage.unshift("Programming");
+secretMessage.splice(6, 5, "know,");
 //prints the secret message
-console.log('prints the secret message')
-console.log(secretMessage.join(' '));
+console.log("prints the secret message");
+console.log(secretMessage.join(" "));
 
 //writing loops manually
 
-const vacationSpots = ['Miami', 'North Carolina', 'Denver']
+const vacationSpots = ["Miami", "North Carolina", "Denver"];
 
-console.log(vacationSpots)
-console.log(vacationSpots[0])
-console.log(vacationSpots[1])
-console.log(vacationSpots[2])
+console.log(vacationSpots);
+console.log(vacationSpots[0]);
+console.log(vacationSpots[1]);
+console.log(vacationSpots[2]);
 
 // Write your code below
-let bobsFriends = ['Erik', 'John', 'Karl', 'Steve']
-let tinasFriends = ['Jessica', 'Karl', 'Erik']
-let mutualFriends = []
-for (let i = 0; i < bobsFriends.length; i++){
-    if(bobsFriends[i] === bobsFriends[i]){
-      console.log("Bobs friends " + bobsFriends[i])
+let bobsFriends = ["Erik", "John", "Karl", "Steve"];
+let tinasFriends = ["Jessica", "Karl", "Erik"];
+let mutualFriends = [];
+for (let i = 0; i < bobsFriends.length; i++) {
+  if (bobsFriends[i] === bobsFriends[i]) {
+    console.log("Bobs friends " + bobsFriends[i]);
+  }
+  for (let j = 0; j < tinasFriends.length; j++) {
+    if (bobsFriends[i] === tinasFriends[j]) {
+      console.log("Tinas friends " + tinasFriends[j]);
     }
-    for (let j = 0; j < tinasFriends.length; j++){
-    if(bobsFriends[i] === tinasFriends[j]){
-      console.log("Tinas friends " + tinasFriends[j])
+    for (let m = 0; m < mutualFriends.length; m++) {
+      if (mutualFriends[m] === bobsFriends[i] && tinasFriends[j]) {
+        console.log("Our mutual friends " + bobsFriends[i] && tinasFriends);
+      }
     }
-  for (let m = 0; m < mutualFriends.length; m++){
-    if(mutualFriends[m] === bobsFriends[i] && tinasFriends[j]){
-  console.log("Our mutual friends " + bobsFriends[i] && tinasFriends)
+    if (bobsFriends[i] === tinasFriends[j]) {
+      console.log(
+        "Bob and Tina have these friends in common: " + bobsFriends[i] &&
+          tinasFriends[j]
+      );
     }
   }
-  if(bobsFriends[i] === tinasFriends[j]){
-    console.log('Bob and Tina have these friends in common: ' + bobsFriends[i] && tinasFriends[j])
-  }
-}
 }
 //Cards
-const cards = ['diamond', 'spade', 'heart', 'club'];
+const cards = ["diamond", "spade", "heart", "club"];
 
 // Write your code below
-let currentCard = 'spade'
-while (currentCard != 'spade'){
-currentCard = cards[Math.floor(Math.random() * 4)];
-console.log(currentCard);
+let currentCard = "spade";
+while (currentCard != "spade") {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard);
 }
 
 // Write your code below
 let cupsOfSugarNeeded = 3;
 let cupsAdded = 0;
 do {
-  cupsAdded ++;
-  console.log(cupsAdded + ' cup(s) was added')
+  cupsAdded++;
+  console.log(cupsAdded + " cup(s) was added");
 } while (cupsAdded < cupsOfSugarNeeded);
 
 const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
 
 // Write your code below
-for (let i = 0; i < rapperArray.length; i++){
+for (let i = 0; i < rapperArray.length; i++) {
   console.log(rapperArray[i]);
-  if (rapperArray[i] === 'Notorious B.I.G.'){
+  if (rapperArray[i] === "Notorious B.I.G.") {
     break; // breaks the loop after it meets the if statement, if the break statement isn't here it won't break the loop
   }
 }
 
 console.log("And if you don't know, now you know.");
 
-
 //Whale Talk
-let input = 'a whale of a deal!';
-const vowels = ['a','e','i','o','u'];
+let input = "a whale of a deal!";
+const vowels = ["a", "e", "i", "o", "u"];
 let resultArray = [];
-for(let i = 0; i < input.length; i++){
-  for(let j = 0; j < vowels.length; j++){
-    if(input[i] === vowels[j]){
-      if(input[i] === 'e'){
-        resultArray.push('ee')
-      }
-      else if(input[i] === 'u'){
-        resultArray.push('uu')
-      }
-      else {
-        resultArray.push(input[i])
+for (let i = 0; i < input.length; i++) {
+  for (let j = 0; j < vowels.length; j++) {
+    if (input[i] === vowels[j]) {
+      if (input[i] === "e") {
+        resultArray.push("ee");
+      } else if (input[i] === "u") {
+        resultArray.push("uu");
+      } else {
+        resultArray.push(input[i]);
       }
     }
   }
 }
-console.log("Your input is " + input)
-console.log("In whale talk this is " + resultArray.join(' ').toUpperCase());
-
+console.log("Your input is " + input);
+console.log("In whale talk this is " + resultArray.join(" ").toUpperCase());
 
 //for loop
-const hobbies = ['Basketball', 'Programming', 'Excercise'];
+const hobbies = ["Basketball", "Programming", "Excercise"];
 
-for(let hobby = 0; hobby < hobbies.length; hobby++){
+for (let hobby = 0; hobby < hobbies.length; hobby++) {
   console.log(`I enjoy ${hobbies[hobby]}`);
 }
 // for of loop
-const hobbee = ['Work', 'Computers', 'Traveling'];
-for(const hobbis of hobbee){
+const hobbee = ["Work", "Computers", "Traveling"];
+for (const hobbis of hobbee) {
   console.log(`I enjoy ${hobbis}`);
 }
 
 //iterating through a string
-let username = 'manendar';
-for(let char of username){
-  console.log(char)
+let username = "manendar";
+for (let char of username) {
+  console.log(char);
 }
 
 //break loop, this will not print what is in the if statement it will break before it prints
-const birds = ['Shoebill','Cockatrice','Basan','Terrorbird','Parotia','Kakapo'];
-for(const bird of birds){
-  if(bird === 'Basan'){
+const birds = [
+  "Shoebill",
+  "Cockatrice",
+  "Basan",
+  "Terrorbird",
+  "Parotia",
+  "Kakapo",
+];
+for (const bird of birds) {
+  if (bird === "Basan") {
     break;
   }
-  console.log(bird)
+  console.log(bird);
 }
 
 //prints out each letter indivually.
-const spellingWord = 'hippopotamus';
+const spellingWord = "hippopotamus";
 
-for(let char of spellingWord){
-  console.log(char)
+for (let char of spellingWord) {
+  console.log(char);
 }
 
 // let spaceship = {
 //   'Fuel Type' : 'Turbo Fuel',
 //   'Active Mission' : true,
-//   homePlanet : 'Earth', 
+//   homePlanet : 'Earth',
 //   numCrew: 5
 //  };
 
@@ -865,110 +907,134 @@ for(let char of spellingWord){
 // //delete operator to delete the secret mission using bracket notation.
 // delete spaceShip['Secret Mission'];
 
-
 //Take over the planet
-let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+let retreatMessage =
+  "We no longer wish to conquer your planet. It is full of dogs, which we do not care for.";
 
 const alienShip = {
   retreat() {
-    console.log(retreatMessage)
+    console.log(retreatMessage);
   },
-  takeOff(){
-    console.log('Spim... Borp... Glix... Blastoff!')
+  takeOff() {
+    console.log("Spim... Borp... Glix... Blastoff!");
   },
-}
+};
 alienShip.retreat();
 alienShip.takeOff();
 
 let spaceship = {
-  passengers: [{name: 'Space Dog'}],
+  passengers: [{ name: "Space Dog" }],
   telescope: {
     yearBuilt: 2018,
     model: "91031-XLT",
-    focalLength: 2032 
+    focalLength: 2032,
   },
   crew: {
-    captain: { 
-      name: 'Sandra', 
-      degree: 'Computer Engineering', 
-      encourageTeam() { console.log('We got this!') },
-     'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] }
+    captain: {
+      name: "Sandra",
+      degree: "Computer Engineering",
+      encourageTeam() {
+        console.log("We got this!");
+      },
+      "favorite foods": ["cookies", "cakes", "candy", "spinach"],
+    },
   },
   engine: {
-    model: "Nimbus2000"
+    model: "Nimbus2000",
   },
   nanoelectronics: {
     computer: {
       terabytes: 100,
-      monitors: "HD"
+      monitors: "HD",
     },
-    'back-up': {
+    "back-up": {
       battery: "Lithium",
-      terabytes: 50
-    }
-  }
-}; 
-let capFave = spaceship.crew.captain['favorite foods'][0];
+      terabytes: 50,
+    },
+  },
+};
+let capFave = spaceship.crew.captain["favorite foods"][0];
 
 let firstPassenger = spaceship.passengers[0];
 
 let spaceships = {
-  'Fuel Type' : 'Turbo Fuel',
-  homePlanet : 'Earth'
+  "Fuel Type": "Turbo Fuel",
+  homePlanet: "Earth",
 };
 
 // Write your code below
 // function greenEnergy object as a parameter, set the object as a parameter set the object as fuel type and fuel type as avoocado oil
-let greenEnergy = obj => {
-obj['Fuel Type'] = 'avocado oil';
-  }
+let greenEnergy = (obj) => {
+  obj["Fuel Type"] = "avocado oil";
+};
 
-  // function remotelyDisable object as a parameter, sets or resasigns that object as disabled property to true
-let remotelyDisable = obj => {
+// function remotelyDisable object as a parameter, sets or resasigns that object as disabled property to true
+let remotelyDisable = (obj) => {
   obj.disabled = true;
-}
+};
 
 //calling the two functions with spaceship object
 greenEnergy(spaceships);
 remotelyDisable(spaceships);
 
 //console logs spaceship
-console.log(spaceships)
+console.log(spaceships);
 
-
-let spaceship = {
+let spaceship3 = {
   crew: {
-  captain: { 
-      name: 'Lily', 
-      degree: 'Computer Engineering', 
-      cheerTeam() { console.log('You got this!') } 
+    captain: {
+      name: "Lily",
+      degree: "Computer Engineering",
+      cheerTeam() {
+        console.log("You got this!");
       },
-  'chief officer': { 
-      name: 'Dan', 
-      degree: 'Aerospace Engineering', 
-      agree() { console.log('I agree, captain!') } 
+    },
+    "chief officer": {
+      name: "Dan",
+      degree: "Aerospace Engineering",
+      agree() {
+        console.log("I agree, captain!");
       },
-  medic: { 
-      name: 'Clementine', 
-      degree: 'Physics', 
-      announce() { console.log(`Jets on!`) } },
-  translator: {
-      name: 'Shauna', 
-      degree: 'Conservation Science', 
-      powerFuel() { console.log('The tank is full!') } 
-      }
-  }
-}; 
+    },
+    medic: {
+      name: "Clementine",
+      degree: "Physics",
+      announce() {
+        console.log(`Jets on!`);
+      },
+    },
+    translator: {
+      name: "Shauna",
+      degree: "Conservation Science",
+      powerFuel() {
+        console.log("The tank is full!");
+      },
+    },
+  },
+};
 
 // Write your code below
 // for ... in loop, iterate through the spaceship.crew, console.log list of crew roles and names.
-for (let crewMember in spaceship.crew)
-{
-console.log(`${crewMember}: ${spaceship.crew[crewMember].name}`)
-};
+for (let crewMember in spaceship3.crew) {
+  console.log(`${crewMember}: ${spaceship3.crew[crewMember].name}`);
+}
 
 // for ... in loop, iterate through the spaceship.crew, console.log list of crew roles and degrees.
-for (let crewMember in spaceship.crew)
-{
-console.log(`${spaceship.crew[crewMember].name}: ${spaceship.crew[crewMember].degree}`)
+for (let crewMember in spaceship3.crew) {
+  console.log(
+    `${spaceship3.crew[crewMember].name}: ${spaceship3.crew[crewMember].degree}`
+  );
+}
+
+const robot = {
+  model: "1E78V2",
+  energyLevel: 100,
+  provideInfo() {
+    return `I am ${this.model} and my current energy level is ${this.energyLevel}.`;
+  },
+};
+console.log(robot.provideInfo());
+
+for (let i = 0; i <= 101; i++) {
+  console.log(`please pay me $${i} dollars`);
 }
