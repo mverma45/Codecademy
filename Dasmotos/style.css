@@ -1,0 +1,79 @@
+/* styling for the entire page */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+/* nav bar styling */
+#nav {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg");
+  text-align: center;
+  font-size: 100px;
+  color: khaki;
+  margin: 10px 8px 55px 8px;
+  padding-top: 15px;
+}
+
+/*Category title*/
+#brushes,
+#frames,
+#paint {
+  font-size: 32px;
+}
+
+/*category tags*/
+#brushes {
+  background-color: mediumspringgreen;
+  color: white;
+  margin: 0 5px 2% 5px;
+}
+
+#frames {
+  background-color: lightcoral;
+  color: white;
+  margin: 0 5px 2% 5px;
+}
+
+#paint {
+  background-color: skyblue;
+  color: white;
+  margin: 0 5px 2% 5px;
+}
+
+/*product details*/
+#brushes-detail,
+#frames-detail,
+#paint-detail {
+  font-weight: normal;
+  margin: 0 5px 2% 5px;
+}
+
+/**/
+#brushes-content,
+#frames-content,
+#paint-content {
+  font-weight: normal;
+  padding: 15px 5px;
+  /* padding-bottom: 30px; */
+}
+
+/* #brushes-content,
+#frames-content,
+#paint-content {
+  
+} */
+
+#brushes-price,
+#frames-price,
+#paint-price {
+  color: blue;
+}
+
+#img-brushes,
+#img-frames,
+#img-paint {
+  margin: 0 5px 0 5px;
+  position: relative;
+}
