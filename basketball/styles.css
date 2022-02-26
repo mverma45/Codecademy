@@ -1,0 +1,30 @@
+* {
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+/* @font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v13/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vu_SeW4Ep0.woff2)
+    format("woff2");
+} */
+
+table,
+td {
+  border: 1px solid hsla(0, 64%, 20%, 0.2);
+}
+
+thead,
+tfoot {
+  background-color: hsla(0, 23%, 79%, 0.8);
+  color: #fff;
+}
+
+#table {
+  margin: 10px auto;
+}
