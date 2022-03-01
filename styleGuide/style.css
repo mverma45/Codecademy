@@ -1,0 +1,94 @@
+#style {
+  text-align: center;
+}
+
+#colors {
+  display: block;
+  text-align: center;
+  border: 2px solid red;
+  padding: 0 2px 50px 2px;
+  /* this is the angles in the corners */
+  border-radius: 20px;
+}
+
+#blue-color {
+  background-color: #0000ff;
+  color: #ffffff;
+  padding: 20px;
+  margin-bottom: 12px;
+}
+
+#pink-color {
+  background-color: rgb(255, 192, 203);
+  color: rgb(7, 7, 7);
+  padding: 20px;
+  margin-bottom: 12px;
+}
+
+#gray-color {
+  /* this color is gray with 20% transparency a is the alpha channel */
+  background-color: rgba(128, 128, 128, 0.2);
+  color: rgba(7, 7, 7, 1);
+  padding: 20px;
+  margin-bottom: 12px;
+}
+
+#bluegray-color {
+  /* hsl is hue, saturation and lightness. */
+  background-color: hsl(271, 76%, 53%);
+  color: hsl(0, 0%, 3%);
+  padding: 20px;
+  margin-bottom: 12px;
+}
+#bluemagenta-color {
+  /* hsl is hue, saturation and lightness. */
+  background-color: hsla(271, 32%, 40%, 0.8);
+  color: hsla(0, 0%, 3%, 0.9);
+  padding: 20px;
+  margin-bottom: 12px;
+}
+
+#fontssection {
+  display: block;
+  text-align: center;
+  border: 2px solid red;
+  padding: 0 2px 50px 2px;
+  /* this is the angles in the corners */
+  border-radius: 20px;
+  margin-top: 4px;
+}
+
+#smoochsans {
+  font-family: "Smooch Sans", "Roboto";
+  font-weight: 200;
+}
+
+#roboto {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+#sansserif {
+  font-family: "sans-serif";
+  font-weight: 300;
+}
+
+#headingsection {
+  display: block;
+  text-align: center;
+  border: 2px solid red;
+  padding: 0 2px 50px 2px;
+  /* this is the angles in the corners */
+  border-radius: 20px;
+  margin-top: 4px;
+}
+
+#headings {
+  font-weight: 300;
+  font-size: 24px;
+  font-family: Roboto;
+}
+
+#textsizing {
+  text-align: center;
+}
