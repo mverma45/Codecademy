@@ -84,6 +84,9 @@ img {
 }
 
 .locations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
   height: 580px;
   width: 1200px;
