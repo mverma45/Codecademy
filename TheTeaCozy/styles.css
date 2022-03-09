@@ -22,11 +22,14 @@ body {
 .main-heading {
   display: flex;
   background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 700px;
   width: 1200px;
   position: relative;
   margin-left: 20px;
-  background-repeat: no-repeat;
+
   align-items: center;
   justify-content: center;
 }
