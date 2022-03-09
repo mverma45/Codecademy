@@ -30,6 +30,8 @@ body {
   position: relative;
   margin-left: 20px;
 
+  background-repeat: no-repeat;
+
   align-items: center;
   justify-content: center;
 }
