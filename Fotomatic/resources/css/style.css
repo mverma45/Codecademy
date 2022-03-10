@@ -11,7 +11,6 @@ html {
 }
 
 .main-content {
-
   display: block;
   background-image: url("../images/banner-landingpage.jpg");
   background-repeat: no-repeat;
@@ -21,11 +20,6 @@ html {
   /* padding-top: 85px; */
   /* To offset for fixed header. */
   top: 5.3125rem;
-
-  background-image: url("../images/banner-landingpage.jpg");
-  background-repeat: no-repeat;
-  background-image: cover;
-  position: relative;
 }
 
 .center {
@@ -49,7 +43,7 @@ html {
   display: flex;
   /* top | right | bottom | left */
   margin: 32px 32px 40px 32px;
-  width: 90%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -82,6 +76,7 @@ header .logo {
 
 header nav ul {
   display: flex;
+  justify-content: flex-end;
 }
 
 header a {
@@ -356,8 +351,8 @@ header .mobile {
 }
 
 #filters-section .images-container {
-  display: inline-block;
-  max-width: 25%;
+  display: inline-flex;
+  max-width: 100%;
   padding: 0 1%;
 }
 
@@ -399,7 +394,7 @@ header .mobile {
 }
 
 #quotes-section content {
-  padding: 5rem 0;
+  padding: 5rem 5rem;
 }
 
 #quotes-section quote {
