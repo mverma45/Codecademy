@@ -11,6 +11,7 @@ html {
 }
 
 .main-content {
+
   display: block;
   background-image: url("../images/banner-landingpage.jpg");
   background-repeat: no-repeat;
@@ -21,12 +22,13 @@ html {
   /* To offset for fixed header. */
   top: 5.3125rem;
 
-  /* background-image: url("../images/banner-landingpage.jpg");
+  background-image: url("../images/banner-landingpage.jpg");
   background-repeat: no-repeat;
+  background-image: cover;
   position: relative;
-  top: 5.3125rem; /* To offset for fixed header. */
 }
-*/ .center {
+
+.center {
   text-align: center;
 }
 
