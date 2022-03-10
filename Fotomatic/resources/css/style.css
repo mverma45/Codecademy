@@ -11,6 +11,7 @@ html {
 }
 
 .main-content {
+
   display: block;
   background-image: url("../images/banner-landingpage.jpg");
   background-repeat: no-repeat;
@@ -20,6 +21,12 @@ html {
   /* padding-top: 85px; */
   /* To offset for fixed header. */
   top: 5.3125rem;
+
+  background-image: url("../images/banner-landingpage.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 5.3125rem; /* To offset for fixed header. */
+
 }
 
 .center {
@@ -89,7 +96,7 @@ header a {
 
 nav li {
   color: #4a4a4a;
-  font-size: 1rem;
+  font-size: 16px;
   font-family: Roboto;
   line-height: 1.6;
   padding-left: 3.5rem;
@@ -163,6 +170,14 @@ header .mobile {
   /* top | right | bottom | left */
   padding: 0 5rem 2.5rem 5rem;
   border: 1px solid #979797;
+  margin-left: 100px;
+  padding-top: 170px;
+  height: 43.5rem;
+}
+
+#sign-up-cta {
+  padding: 0 5rem 2.5rem 5rem;
+  border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
 }
@@ -196,6 +211,7 @@ header .mobile {
 #sign-up-cta .striking {
   color: white;
   font-size: 45px;
+  font-size: 50px;
   font-family: "Rubik", sans-serif;
   line-height: 1.4;
   padding-bottom: 0.75rem;
@@ -268,6 +284,8 @@ header .mobile {
 .feature {
   flex: 1;
   margin: 0 1.25rem;
+  padding: 2rem;
+  margin: 0px 1.25rem;
   background-color: white;
 }
 
@@ -276,6 +294,7 @@ header .mobile {
   height: 65%;
   /* top | right | bottom | left */
   padding-top: 32px 32px 40px;
+  margin: 0 auto;
 }
 
 .feature h2 {
