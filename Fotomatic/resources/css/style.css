@@ -24,9 +24,8 @@ html {
 
   background-image: url("../images/banner-landingpage.jpg");
   background-repeat: no-repeat;
+  background-image: cover;
   position: relative;
-  top: 5.3125rem; /* To offset for fixed header. */
-
 }
 
 .center {
@@ -167,19 +166,10 @@ header .mobile {
 }
 
 #sign-up-cta {
-  /* top | right | bottom | left */
-  padding: 0 5rem 2.5rem 5rem;
-  border: 1px solid #979797;
-  margin-left: 100px;
-  padding-top: 170px;
-  height: 43.5rem;
-}
-
-#sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
-  background-color: #9dc20b;
+  background-color: #9dc20a;
 }
 
 #sign-up-cta .content {
