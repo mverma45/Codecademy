@@ -6,8 +6,10 @@ html {
 }
 
 .main-content {
+
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
+
 }
 
 .center {
@@ -25,7 +27,11 @@ html {
 }
 
 .image-container img {
-  display: block;
+
+  display: flex;
+  /* top | right | bottom | left */
+  margin: 32px 32px 40px 32px;
+
   width: 100%;
 }
 
@@ -56,7 +62,19 @@ header .logo {
 }
 
 header nav ul {
-  justify-content: flex;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+header a {
+  color: #4a4a4a;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  text-decoration: none;
+  /* top | right | bottom | left */
+  margin: 0 30px 45px 30px;
+
 }
 
 nav li {
@@ -334,7 +352,9 @@ header .mobile {
 }
 
 #filters-section .images-container {
+
   display: flex;
+
   max-width: 100%;
   padding: 0 1%;
 }
@@ -375,11 +395,13 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
+
 #quotes-section .content {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5rem 1.5rem;
+
 }
 
 #quotes-section .quote {
