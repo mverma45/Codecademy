@@ -55,8 +55,31 @@
 .email,
 .phone {
   text-align: center;
+  margin-top: 20px;
 }
 
 .copyright {
   padding-left: 20px;
+}
+
+.locations-container {
+  display: grid;
+  grid-template-columns: (4, 1fr);
+  gap: 40px;
+  grid-auto-rows: minmax(40px);
+}
+
+.locations1 {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+
+.locations2 {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+
+.locations3 {
+  grid-column: 3/4;
+  grid-row: 1;
 }
