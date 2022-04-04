@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.logo {
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png");
+  height: 69px;
+  position: relative;
+  padding-top: 2px;
+  margin-left: 10px;
+  width: 150px;
+  background-repeat: no-repeat;
+  background-size: 150px;
+}
+
+.title a {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-heading {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 25px;
+  /* position: absolute;
+  left: 0;
+  top: 0; */
+}
+
+.textover {
+  max-width: 700px;
+  position: relative;
+}
+
+/* Text */
+.textover figcaption {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: seashell;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0, 0);
+}
+
+.textover2 figcaption {
+  box-sizing: border-box;
+  position: absolute;
+  color: seashell;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0, 0);
+}
+
+.textover img {
+  width: 100%;
+}
+
+/* .heading-container {
+  width: 1200px;
+  height: 700px;
+  position: relative;
+}
+
+h4 {
+  z-index: 100;
+  position: absolute;
+  color: #ffffff;
+  font-size: 1rem;
+  background-color: black;
+} */
+
+.tea-heading {
+  text-align: center;
+}
+
+.img-container img {
+  display: flex;
+  margin: 32px 32px 40px 32px;
+  width: 300px;
+  height: 200px;
+}
+
+.img-class img {
+  display: flex;
+  height: 200px;
+  width: 300px;
+}
+
+.img-class2 img {
+  display: flex;
+  height: 200px;
+  width: 300px;
+}
+
+.teacozy,
+.email,
+.phone {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.copyright {
+  padding-left: 20px;
+}
+
+.locations-container {
+  display: grid;
+  grid-template-columns: (4, 1fr);
+  gap: 40px;
+  grid-auto-rows: minmax(40px);
+}
+
+.locations1 {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+
+.locations2 {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+
+.locations3 {
+  grid-column: 3/4;
+  grid-row: 1;
+}
