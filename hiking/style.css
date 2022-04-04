@@ -278,7 +278,11 @@ blockquote footer {
   padding: 80px 0;
 }
 .photo-about h2 {
+<<<<<<< HEAD
   color: #888888;
+=======
+  color: #615f5f;
+>>>>>>> loops
   margin-bottom: 30px;
 }
 .photo-about p {
