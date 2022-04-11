@@ -41,3 +41,16 @@ for (let crewMember in spaceship.crew) {
     `${spaceship.crew[crewMember].name}: ${spaceship.crew[crewMember].degree}`
   )
 }
+//this keyword
+
+const robot = {
+  model: "1E78V2",
+  energyLevel: 100,
+  provideInfo() {
+    return `I am ${this.model} and my current energy level is ${this.energyLevel}.`
+  },
+}
+
+robot.provideInfo()
+
+console.log(robot.provideInfo())
