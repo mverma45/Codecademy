@@ -18,3 +18,21 @@ for (let i = 0; i < input.length; i++) {
 // console.log(resultArray)
 const resultString = resultArray.join("").toUpperCase()
 console.log(resultString)
+
+let retreatMessage =
+  "We no longer wish to conquer your planet. It is full of dogs, which we do not care for."
+
+// Write your code below
+
+let alienShip = {
+  retreat() {
+    console.log(retreatMessage)
+  },
+  takeOff() {
+    console.log("Spim... Borp... Glix... Blastoff!")
+  },
+}
+
+alienShip.retreat()
+
+alienShip.takeOff()
