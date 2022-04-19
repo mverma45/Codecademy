@@ -1,0 +1,7 @@
+Functions in JavaScript are first class objects, meaning they can have properties and methods.
+A higher order function is a function that accepts functions as parameters, returns a function or both.
+Functions that get passed in as parameters are callback functions.
+Callback functions get invoked during the execution of the higher order functions.
+The built in JS array methods that help us iterate are called iteration methods. Also referred to as iterators. They are methods called on arrays to manipulate elements and return values.
+forEach() returns undefined, because the forEach() does not create a new object. It doesn't return a value.
+.map returns a new array, it works similar to the .forEach() method.
