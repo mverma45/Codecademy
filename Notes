@@ -5,3 +5,6 @@ Callback functions get invoked during the execution of the higher order function
 The built in JS array methods that help us iterate are called iteration methods. Also referred to as iterators. They are methods called on arrays to manipulate elements and return values.
 forEach() returns undefined, because the forEach() does not create a new object. It doesn't return a value.
 .map returns a new array, it works similar to the .forEach() method.
+.filter also returns an array, however it returns a true or false value.  It also returns an filtered array of elements from the original array.
+.findIndex() will return the index of the first element that evaluates to true in the callback function.
+
