@@ -7,4 +7,4 @@ forEach() returns undefined, because the forEach() does not create a new object.
 .map returns a new array, it works similar to the .forEach() method.
 .filter also returns an array, however it returns a true or false value.  It also returns an filtered array of elements from the original array.
 .findIndex() will return the index of the first element that evaluates to true in the callback function.
-
+.reduce() method will return a single value after iteating through the elements of the array, which reduces the array.  It basically adds the array together.
