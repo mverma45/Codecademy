@@ -1,10 +1,19 @@
 Functions in JavaScript are first class objects, meaning they can have properties and methods.
 A higher order function is a function that accepts functions as parameters, returns a function or both.
+
 Functions that get passed in as parameters are callback functions.
 Callback functions get invoked during the execution of the higher order functions.
 The built in JS array methods that help us iterate are called iteration methods. Also referred to as iterators. They are methods called on arrays to manipulate elements and return values.
 forEach() returns undefined, because the forEach() does not create a new object. It doesn't return a value.
+
 .map returns a new array, it works similar to the .forEach() method.
-.filter also returns an array, however it returns a true or false value.  It also returns an filtered array of elements from the original array.
+
+.filter also returns an array, however it returns a true or false value. It also returns an filtered array of elements from the original array.
+
 .findIndex() will return the index of the first element that evaluates to true in the callback function.
-.reduce() method will return a single value after iteating through the elements of the array, which reduces the array.  It basically adds the array together.
+
+.reduce() method will return a single value after iteating through the elements of the array, which reduces the array. It basically adds the array together.
+
+.some() method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
+
+.every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
