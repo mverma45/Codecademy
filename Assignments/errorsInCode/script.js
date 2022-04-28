@@ -22,3 +22,12 @@ console.log(
 console.log(
   "capitalizeASingleWord('hey ho') returns: " + capitalizeASingleWord("hey ho")
 )
+
+// Link to String.repeat() documentation:
+//developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
+function doubleString(string) {
+  // this will repeat the string two times
+  return string.repeat(2)
+}
+// Should return 'echoecho'
+console.log("echo".repeat(2))
