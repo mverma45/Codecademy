@@ -8,6 +8,7 @@ let shippingAddress: string = "457 Broadway, Utah"
 const product = products.filter(product => {
   return product.name === productName
 })[0]
+// console.log(product)
 if (product.preOrder) {
   console.log("We will send you a notification, once your shipment ships.")
 }
@@ -23,6 +24,9 @@ if (shippingAddress.match("New York")) {
   taxPercent = 0.1
 } else {
   taxPercent = 0.05
+
+  taxPercent = 0.05
+
 }
 taxTotal = product.price * taxPercent
 total = product.price + taxTotal + shipping

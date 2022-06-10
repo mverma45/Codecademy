@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+exports.__esModule = true
 var _products_1 = require(".products");
 var productName = "tote bag";
 var shipping;
