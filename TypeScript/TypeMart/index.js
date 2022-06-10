@@ -1,16 +1,15 @@
 "use strict";
-exports.__esModule = true;
-var products_1 = require("./products");
+exports.__esModule = true
+var _products_1 = require(".products");
 var productName = "tote bag";
 var shipping;
 var taxPercent;
 var taxTotal;
 var total;
 var shippingAddress = "457 Broadway, Utah";
-var product = products_1["default"].filter(function (product) {
+var product = _products_1["default"].filter(function (product) {
     return product.name === productName;
 })[0];
-// console.log(product)
 if (product.preOrder) {
     console.log("We will send you a notification, once your shipment ships.");
 }
