@@ -52,34 +52,23 @@ function outputImage(onChar, offChar) {
     }
     console.log(text);
 }
-/**
- * Creates an array of booleans where a pixel
- * is "on" when the value is `true` and "off"
- * when the value is `false`.
- *
- * The pixel values are stored in rows
- * (row-major order) where the index of a
- * pixel in the array can be found via:
- *
- *     index = y * imageWidth + x
- *
- * `x` is the horizontal position in the image
- * and `y` is the vertical position from the top
- * left corner.
- *
- * Note: This function has a return type annotation
- * of `boolean[]`. That means it's an array of
- * booleans. We'll learn more about this in a
- * future module.
- */
 function createImageData() {
     // create array of size `length` containing `false` values
     var length = imageWidth * imageHeight;
     return new Array(length).fill(false);
 }
 function drawDot(x, y) {
-    imageData[y * imageWidth + x] = true;
+    if (isPointInImage(x, y)) {
+        imageData[y * imageWidth + x] = true;
+    }
 }
-if (isPointInImage(x, y)) {
-    imageData[y * imageWidth + x] = true;
+function drawHorizontalLine(x, y, length) {
+    for (var i = 0; i < length; i++) {
+        drawDot(x + i, y);
+    }
+}
+function drawVerticalLine(x, y, length) {
+    for (var i = 0; i < length; i++) {
+        drawDot(x, i + y);
+    }
 }
