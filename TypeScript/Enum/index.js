@@ -20,7 +20,7 @@ var ordersArrayTS = [
   [Pet.Hamster, 2],
   [Pet.Chinchilla, 50],
 ]
-//
+
 // Add Type alias below:
 
 type Coord = [number, number, string, number, number, string]
