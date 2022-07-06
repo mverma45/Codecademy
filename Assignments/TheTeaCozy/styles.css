@@ -17,9 +17,11 @@
   background-size: 150px;
 }
 
-.nav .title a {
+.nav a {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
 }
 
 .main-heading {
@@ -81,11 +83,12 @@ h4 {
   text-align: center;
 }
 
-.img-container img {
+.img-container .img-class img {
   display: flex;
-  margin: 32px 32px 40px 32px;
+
+  /* margin: 32px 32px 40px 32px;
   width: 300px;
-  height: 200px;
+  height: 200px; */
 }
 
 .img-class img {
