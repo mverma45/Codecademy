@@ -27,6 +27,7 @@ formatValue("Hiya")
 formatValue(42)
 
 // Inferred Union Return Types
+
 // Declare a variable named userData that stores the returned value of createUser(). Then, go back and provide userData with the correct union type.
 type User = {
   id: number
