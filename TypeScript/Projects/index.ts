@@ -1,6 +1,6 @@
 // importing from other files
 import courses from "./courses"
-import studyGroup from "./studyGroups"
+import studyGroups from "./studyGroups"
 
 // defining types for the data that was imported.
 type Course = {
@@ -19,10 +19,35 @@ type StudyGroup = {
   eventType: string
 }
 
+let enrolledEvents: (Course | StudyGroup)[] = []
+
 // searching through events
 type SearchEventsOptions = {
   query: string | number
   eventType: "courses" | "groups"
 }
 
-function searchEvents(options: SearchEventsOptions) {}
+function searchEvents(options: SearchEventsOptions) {
+  const events: (Course | StudyGroup)[] =
+    options.eventType === "courses" ? courses : studyGroups
+
+  return events.filter((event: Course | StudyGroup) => {
+    if (typeof options.query === "number") {
+      return event.id === options.query
+    }
+
+    if (typeof options.query === "string") {
+      return event.keywords.includes(options.query)
+    }
+  })
+}
+
+function enroll(event: Course | StudyGroup) {
+  enrolledEvents = [...enrolledEvents, event]
+}
+
+const searchResults = searchEvents({ query: "art", eventType: "courses" })
+
+enroll(searchResults[0])
+
+console.log(enrolledEvents)
