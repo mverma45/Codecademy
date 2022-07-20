@@ -16,5 +16,5 @@ constructor(props: AutonomousCarProps){
 }
 }
 const autonomousCar = new Car({.isRunning: 'true'});
-})
+
 console.log(.isRunning)
