@@ -10,6 +10,14 @@ interface AutonomousCarProps {
 interface Events {
   [i: string]: boolean
 }
+interface Control {
+  execute: (command: string) => void
+}
+interface Steering extends Control {
+  turn: (direction: string) => void
+}
+
+class steeringControl implements Steering {}
 
 class Car implements AutonomousCar {
   isRunning
