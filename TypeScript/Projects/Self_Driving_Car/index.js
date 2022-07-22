@@ -12,5 +12,5 @@ var Car = /** @class */ (function () {
     };
     return Car;
 }());
-var autonomousCar = new Car({ isRunning: true });
+var autonomousCar = new Car({ isRunning: false });
 autonomousCar.respond((0, computer_vision_1.getObstacleEvents)());
