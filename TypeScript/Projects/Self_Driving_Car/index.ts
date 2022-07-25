@@ -17,7 +17,14 @@ interface Steering extends Control {
   turn: (direction: string) => void
 }
 
-class steeringControl implements Steering {}
+class SteeringControl implements Steering {
+  execute(command: string) {
+    console.log(`Executing: ${command}`)
+  }
+  turn(direction: string) {
+    this.execute(`Turn: ${direction}`)
+  }
+}
 
 class Car implements AutonomousCar {
   isRunning
@@ -30,5 +37,10 @@ class Car implements AutonomousCar {
     }
   }
 }
+
+const steering = new SteeringControl()
+
 const autonomousCar = new Car({ isRunning: true })
-autonomousCar.respond(getObstacleEvents())
+
+steering.turn("right")
+// autonomousCar.respond(getObstacleEvents())

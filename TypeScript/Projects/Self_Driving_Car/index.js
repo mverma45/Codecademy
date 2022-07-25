@@ -1,6 +1,16 @@
 "use strict";
 exports.__esModule = true;
-var computer_vision_1 = require("./computer-vision");
+var SteeringControl = /** @class */ (function () {
+    function SteeringControl() {
+    }
+    SteeringControl.prototype.execute = function (command) {
+        console.log("Executing: ".concat(command));
+    };
+    SteeringControl.prototype.turn = function (direction) {
+        this.execute("Turn: ".concat(direction));
+    };
+    return SteeringControl;
+}());
 var Car = /** @class */ (function () {
     function Car(props) {
         this.isRunning = props.isRunning;
@@ -12,5 +22,7 @@ var Car = /** @class */ (function () {
     };
     return Car;
 }());
-var autonomousCar = new Car({ isRunning: false });
-autonomousCar.respond((0, computer_vision_1.getObstacleEvents)());
+var steering = new SteeringControl();
+var autonomousCar = new Car({ isRunning: true });
+steering.turn("right");
+// autonomousCar.respond(getObstacleEvents())
