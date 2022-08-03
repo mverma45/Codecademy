@@ -152,6 +152,7 @@ let anotherFamily: Family<Dog> = {
     { name: "Puppenator", tailWagSpeed: 0.01 },
   ],
 }
+<<<<<<< HEAD
 
 // Generic Functions
 
@@ -172,3 +173,5 @@ personArray =
   { name: string, age: number } >
   ({ name: "J. Dean", age: 24 }, 6)
 coordinateArray = getFilledArray < [number, number] > ([3, 4], 6)
+=======
+>>>>>>> a45329f (adding generic-enum)

@@ -27,7 +27,6 @@ formatValue("Hiya")
 formatValue(42)
 
 // Inferred Union Return Types
-<<<<<<< HEAD
 
 // Declare a variable named userData that stores the returned value of createUser(). Then, go back and provide userData with the correct union type.
 type User = {
@@ -113,5 +112,3 @@ function downloadStatus(status: Status) {
   }
   return downloadStatus("idle")
 }
-=======
->>>>>>> c22e95a (adding codecademy stuff)
