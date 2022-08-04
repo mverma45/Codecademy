@@ -1,6 +1,12 @@
 // importing from other files
 import courses from "./courses"
+<<<<<<< HEAD
 import studyGroups from "./studyGroups"
+=======
+
+import studyGroups from "./studyGroups"
+import studyGroup from "./studyGroups"
+>>>>>>> origin/master
 
 // defining types for the data that was imported.
 type Course = {
@@ -19,14 +25,25 @@ type StudyGroup = {
   eventType: string
 }
 
+<<<<<<< HEAD
 let enrolledEvents: (Course | StudyGroup)[] = []
 
+=======
+
+let enrolledEvents: (Course | StudyGroup)[] = []
+
+
+>>>>>>> origin/master
 // searching through events
 type SearchEventsOptions = {
   query: string | number
   eventType: "courses" | "groups"
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 function searchEvents(options: SearchEventsOptions) {
   const events: (Course | StudyGroup)[] =
     options.eventType === "courses" ? courses : studyGroups
@@ -51,3 +68,9 @@ const searchResults = searchEvents({ query: "art", eventType: "courses" })
 enroll(searchResults[0])
 
 console.log(enrolledEvents)
+<<<<<<< HEAD
+=======
+
+function searchEvents(options: SearchEventsOptions) {}
+
+>>>>>>> origin/master

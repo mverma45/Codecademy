@@ -28,7 +28,11 @@ function printOrders(restaurants, orders) {
     {
         if (orders[index].length > 0) {
             console.log(restaurant.name);
+<<<<<<< HEAD
+            orders[index].forEach(orders);
+=======
             orders[index].forEach(order);
+>>>>>>> c22e95a (adding codecademy stuff)
             {
                 console.log('- ${order.name}: ${order.price}');
             }
