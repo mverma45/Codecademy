@@ -50,7 +50,7 @@ class HospitalEmployee {
     }
   
     get remainingVacationDays() {
-      return (this._remainingVacationDays -= daysOff);
+      return (this._remainingVacationDays);
     }
   
     get insurance() {
@@ -65,5 +65,4 @@ class HospitalEmployee {
   console.log(nurseOlynyk.remainingVacationDays);
   nurseOlynyk.addCertification("Genetics");
   console.log(nurseOlynyk.certifications);
-  console.log('Thanks')
   
