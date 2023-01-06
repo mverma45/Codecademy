@@ -1,137 +1,144 @@
-* {
-  font-family: Helvetica;
-  font-size: 22px;
+/* Universal Styles */
+
+body {
+  margin: 0;
+  font-family: "Helvetica", sans-serif;
   color: seashell;
   background-color: black;
-  opacity: 0.9;
+  font-size: 22px;
+  text-align: center;
 }
 
-.logo {
-  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png");
-  height: 69px;
-  position: relative;
-  padding-top: 2px;
-  margin-left: 10px;
-  width: 150px;
-  background-repeat: no-repeat;
-  background-size: 150px;
+a {
+  color: seashell;
 }
 
-.nav a {
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 10px;
+}
+
+.flex-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.main-heading {
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 25px;
-  /* position: absolute;
-  left: 0;
-  top: 0; */
+/* Header Section */
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  height: 69px;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  align-items: center;
 }
 
-.textover {
-  max-width: 700px;
-  position: relative;
+header img {
+  height: 50px;
+  padding-left: 10px;
 }
 
-/* Text */
-.textover figcaption {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: seashell;
-  padding: 10px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0, 0);
+nav {
+  text-align: right;
+  flex-grow: 1;
 }
 
-.textover2 figcaption {
-  box-sizing: border-box;
-  position: absolute;
-  color: seashell;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0, 0);
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
 }
 
-.textover img {
+/* Main Section */
+
+.main {
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1200px;
+  margin: auto;
+}
+
+/* Mission Section */
+
+#mission {
+  height: 700px;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+  padding-top: 70px;
+}
+
+#mission .content {
+  margin: auto;
+  background-color: black;
   width: 100%;
 }
 
-/* .heading-container {
-  width: 1200px;
+/* Store Section */
+
+#store {
   height: 700px;
-  position: relative;
+  width: 1000px;
+  margin: auto;
+  padding-top: 70px;
 }
 
-h4 {
-  z-index: 100;
-  position: absolute;
-  color: #ffffff;
-  font-size: 1rem;
+.item {
+  padding: 5px;
+}
+
+.item img {
+  height: 200px;
+  margin: 10px;
+  display: block;
+}
+
+.item span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Location Section */
+
+.flex-container.locations {
+  padding-top: 5px;
+}
+
+#locations {
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+  height: 500px;
+  padding-top: 70px;
+}
+
+#locations .flex-container {
+  margin: auto;
+  width: 1100px;
+}
+
+.location {
+  opacity: 1.0;
+  padding: 10px;
+  margin: 5px 20px;
   background-color: black;
-} */
-
-.tea-heading {
-  text-align: center;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.img-container .img-class img {
-  display: flex;
+/* Contact Section */
 
-  /* margin: 32px 32px 40px 32px;
-  width: 300px;
-  height: 200px; */
-}
-
-.img-class img {
-  display: flex;
+#contact {
   height: 200px;
-  width: 300px;
 }
 
-.img-class2 img {
-  display: flex;
-  height: 200px;
-  width: 300px;
-}
+/* Footer Section */
 
-.teacozy,
-.email,
-.phone {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.copyright {
+footer {
+  text-align: left;
   padding-left: 20px;
-}
-
-.locations-container {
-  display: grid;
-  grid-template-columns: (4, 1fr);
-  gap: 40px;
-  grid-auto-rows: minmax(40px);
-}
-
-.locations1 {
-  grid-column: 2/4;
-  grid-row: 1;
-}
-
-.locations2 {
-  grid-column: 2/4;
-  grid-row: 1;
-}
-
-.locations3 {
-  grid-column: 3/4;
-  grid-row: 1;
 }
