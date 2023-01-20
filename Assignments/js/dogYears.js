@@ -1,4 +1,5 @@
-const myAge = 33
+// my age
+const myAge = 40
 // This is the first 2 years of life.
 let earlyYears = 2
 
