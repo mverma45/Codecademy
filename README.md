@@ -1,3 +1,2 @@
-# myCodingJourney
-This has some of the projects I did with CodeCademy.  Some of the code is just me testing out outcomes I did while taking the course.
-
+# Codecademy
+projects, assignments, website(s) I built with codecademy, I add to this everytime I work on Codecademy the platform.
