@@ -28,8 +28,10 @@ console.log(agreeOrDisagree("yup", "Nope"))  // should print You disagree
 
 
 // life phases
-
-const lifePhase = (age) => {
+// arrow function
+// const lifePhase = (age) => {
+// regular function
+    function lifePhase(age){
     if (age < 0 || age > 140) {
       return 'This is not a valid age';
     } else if (age < 4) {
