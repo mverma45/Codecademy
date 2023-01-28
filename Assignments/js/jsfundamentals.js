@@ -27,3 +27,26 @@ console.log(agreeOrDisagree("yup", "yup"))  // should print You agree
 console.log(agreeOrDisagree("yup", "Nope"))  // should print You disagree
 
 
+// life phases
+
+const lifePhase = (age) => {
+    if (age < 0 || age > 140) {
+      return 'This is not a valid age';
+    } else if (age < 4) {
+      return 'baby';
+    } else if (age < 13) {
+      return 'child';
+    } else if (age < 20) {
+      return 'teen';
+    } else if (age < 65) {
+      return 'adult';
+    } else {
+      return 'senior citizen';
+    }
+  };
+
+  
+  //tests
+  console.log(lifePhase(5));  // prints child
+  console.log(lifePhase(89)); // prints senior citizen
+  console.log(lifePhase(-8)); // prints this is not a valid age
