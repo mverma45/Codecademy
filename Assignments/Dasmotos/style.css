@@ -12,9 +12,8 @@
   background-size: cover;
   text-align: center;
   font-size: 50px;
-  color: black;
-  margin: 10px 8px 55px 8px;
-  padding-top: 100px;
+  /* top | right | bottom | left */
+  margin: 10px 8px 5px 8px;
 }
 
 /*Category title*/
@@ -85,3 +84,10 @@
     padding: 15px;
     }
 }
+
+@media screen and (max-width: 480px) {
+  #nav {
+    background-size: cover;
+    padding: 55px;
+    }
+  }
