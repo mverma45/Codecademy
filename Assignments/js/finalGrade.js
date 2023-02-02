@@ -1,6 +1,5 @@
-    // Grades program
     function finalGrade(midterm, final, homework) {
-        // initialize Grade
+
         if ( midterm < 0 ||
             midterm > 100 ||
             final < 0 ||
@@ -30,4 +29,4 @@
         }
     }
 
-    // console.log(finalGrade(99, 92, 95)/3) // Should print 'A'
+    // console.log(finalGrade(99, 92, 95)/3)
