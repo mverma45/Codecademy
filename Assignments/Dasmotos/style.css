@@ -8,12 +8,13 @@
 
 /* nav bar styling */
 #nav {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg");
+  background-image: url(./img/splash.jpg);
+  background-size: cover;
   text-align: center;
   font-size: 50px;
-  color: khaki;
+  color: black;
   margin: 10px 8px 55px 8px;
-  padding-top: 15px;
+  padding-top: 100px;
 }
 
 /*Category title*/
@@ -76,4 +77,11 @@
 #img-paint {
   margin: 0 5px 0 5px;
   position: relative;
+}
+
+@media screen and (min-width: 480px) {
+  #nav {
+    background-size: cover;
+    padding: 15px;
+    }
 }
