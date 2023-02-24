@@ -21,7 +21,7 @@ function compareGuesses(humanGuessInput, computerGuessDisplay, targetNumberDispl
     }
 
     const advanceRound = () =>
-      nextRoundButton++;
-    
+      nextRoundButton++;   
+        
   }
 }
