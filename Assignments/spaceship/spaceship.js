@@ -119,9 +119,9 @@ function robotFactory(model, mobile) {
 }
 
 // To check that the property value shorthand technique worked:
-const newRobot = robotFactory("P-501", false)
-console.log(newRobot.model)
-console.log(newRobot.mobile)
+const newRobot1 = robotFactory("P-501", false)
+console.log(newRobot1.model)
+console.log(newRobot1.mobile)
 
 const robot = {
   model: "1E78V2",
@@ -144,12 +144,13 @@ functionality.beep()
 
 
 //Built-in Object Methods
-  model: "SAL-1000",
-  mobile: true,
-  sentient: false,
-  armor: "Steel-plated",
-  energyLevel: 75,
-}
+
+//   model: "SAL-1000",
+//   mobile: true,
+//   sentient: false,
+//   armor: "Steel-plated",
+//   energyLevel: 75,
+// }
 
 // What is missing in the following method call?
 const robotKeys = Object.keys(robot)
